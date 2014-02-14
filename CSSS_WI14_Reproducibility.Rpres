@@ -6,8 +6,6 @@ date: February 2014
 ext_widgets : {rCharts: libraries/nvd3}
 ---
 
-
-
 Motivations
 ========================================================
 
@@ -39,8 +37,6 @@ Research pipeline
 ![alt text](figures/peng-pipeline.jpg)
 <small>http://www.stodden.net/AMP2011/slides/pengslides.pdf</small>
 
-
-
 Click trails are ephemeral 
 ========================================================
 - GUIs and copy-paste are bad for reproducibility 
@@ -51,18 +47,20 @@ Click trails are ephemeral
 
 ***
 
+![alt text](figures/contrails.jpg)
 
-```{r}
-summary(cars)
-```
 
 Scripted analyses endure
 ========================================================
-Plain text files and UTF-8 encoding will be readable for a long time
+
+
+![alt text](figures/open-science.png)
 
 ***
 
-![alt text](figures/open-science.png)
+Plain text files and UTF-8 encoding will be readable for a long time
+
+They are much more accessible
 
 Literate statistical programming 
 ========================================================
@@ -174,6 +172,7 @@ Interactive charts in the browser with the rCharts package
 # and when the cache folder is available 
 require(rCharts)
 n1 <- nPlot(mpg ~ wt, data = mtcars, type = 'scatterChart')
+n1$addParams(width = 600, height = 300)
 n1
 ```
 
@@ -185,6 +184,23 @@ Interactive charts in the browser with the rCharts package
 require(rCharts)
 hair_eye_male <- subset(as.data.frame(HairEyeColor), Sex == "Male")
 n2 <- nPlot(Freq ~ Hair, group = "Eye", data = hair_eye_male, type = "multiBarChart")
+n2$addParams(width = 600, height = 300)
+n2
+```
+
+Interactive charts in the browser with brief code
+========================================================
+```
+require(rCharts)
+n1 <- nPlot(mpg ~ wt, data = mtcars, type = 'scatterChart')
+n1$addParams(width = 600, height = 300)
+n1
+```
+```
+require(rCharts)
+hair_eye_male <- subset(as.data.frame(HairEyeColor), Sex == "Male")
+n2 <- nPlot(Freq ~ Hair, group = "Eye", data = hair_eye_male, type = "multiBarChart")
+n2$addParams(width = 600, height = 300)
 n2
 ```
 
@@ -240,7 +256,7 @@ Presentation written in Markdown
 Compiled into HTML using RStudio
 
 Source code hosting:
-http://github.com/benmarwick/
+https://github.com/benmarwick/CSSS-Primer-Reproducible-Research
 
 FigShare DOI:
 
@@ -252,10 +268,9 @@ Licensing:
 
 * Source code: MIT 
 
-
 References
 ========================================================
-See markdown file for full references
+See Rpres file for full references
 ```{r, echo=FALSE}
 # Buckheit, J.B. and Donoho, D.L. Wavelab and reproducible research. (1995).
 # Morin, A. et al. Shining light into black boxes. Science. 336, (2012), 159-160.

@@ -6,8 +6,6 @@ date: February 2014
 ext_widgets : {rCharts: libraries/nvd3}
 ---
 
-
-
 Motivations
 ========================================================
 
@@ -39,8 +37,6 @@ Research pipeline
 ![alt text](figures/peng-pipeline.jpg)
 <small>http://www.stodden.net/AMP2011/slides/pengslides.pdf</small>
 
-
-
 Click trails are ephemeral 
 ========================================================
 - GUIs and copy-paste are bad for reproducibility 
@@ -51,30 +47,20 @@ Click trails are ephemeral
 
 ***
 
-
-
-```r
-summary(cars)
-```
-
-```
-     speed           dist    
- Min.   : 4.0   Min.   :  2  
- 1st Qu.:12.0   1st Qu.: 26  
- Median :15.0   Median : 36  
- Mean   :15.4   Mean   : 43  
- 3rd Qu.:19.0   3rd Qu.: 56  
- Max.   :25.0   Max.   :120  
-```
+![alt text](figures/contrails.jpg)
 
 
 Scripted analyses endure
 ========================================================
-Plain text files and UTF-8 encoding will be readable for a long time
+
+
+![alt text](figures/open-science.png)
 
 ***
 
-![alt text](figures/open-science.png)
+Plain text files and UTF-8 encoding will be readable for a long time
+
+They are much more accessible
 
 Literate statistical programming 
 ========================================================
@@ -93,7 +79,7 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Fri Feb 14 2:55:02 AM 2014
+The time is Fri Feb 14 1:12:31 PM 2014
 
 Advantages and disadvantages
 ========================================================
@@ -188,7 +174,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot1.html
 ' scrolling='no' seamless
 class='rChart nvd3 '
 id=iframe-
-chart1bec17235503
+chart1e3c3a925966
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -200,10 +186,26 @@ CSSS_WI14_Reproducibility-figure/nvd3plot2.html
 ' scrolling='no' seamless
 class='rChart nvd3 '
 id=iframe-
-chart1bec7f3119e9
+chart1e3c13a81d66
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
+
+Interactive charts in the browser with brief code
+========================================================
+```
+require(rCharts)
+n1 <- nPlot(mpg ~ wt, data = mtcars, type = 'scatterChart')
+n1$addParams(width = 600, height = 300)
+n1
+```
+```
+require(rCharts)
+hair_eye_male <- subset(as.data.frame(HairEyeColor), Sex == "Male")
+n2 <- nPlot(Freq ~ Hair, group = "Eye", data = hair_eye_male, type = "multiBarChart")
+n2$addParams(width = 600, height = 300)
+n2
+```
 
 The Hierarchy of Code Reproducibility
 ========================================================
@@ -257,7 +259,7 @@ Presentation written in Markdown
 Compiled into HTML using RStudio
 
 Source code hosting:
-http://github.com/benmarwick/
+https://github.com/benmarwick/CSSS-Primer-Reproducible-Research
 
 FigShare DOI:
 
@@ -269,10 +271,9 @@ Licensing:
 
 * Source code: MIT 
 
-
 References
 ========================================================
-See markdown file for full references
+See Rpres file for full references
 
 
 
