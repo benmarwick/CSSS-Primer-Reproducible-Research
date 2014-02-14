@@ -112,16 +112,15 @@ Very low barrier to documentation of code with roxygen2
 
 Need a document formatting language
 ========================================================
-Human-readable
-
-Markdown
-
-R Markdown
-
-***
 
 ![alt text](figures/markdown.png)
 
+Markdown: lightweight, human-readable document formatting syntax
+based on email text formatting
+
+***
+
+R Markdown: minor extensions to allow R code display and execution, embed images in html files, equations
 
 One package to rule them all
 ========================================================
@@ -194,7 +193,7 @@ Interactive charts in the browser with brief code
 require(rCharts)
 n1 <- nPlot(mpg ~ wt, data = mtcars, type = 'scatterChart')
 n1$addParams(width = 600, height = 300)
-n1
+n1 
 ```
 ```
 require(rCharts)

@@ -79,7 +79,7 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Fri Feb 14 1:12:31 PM 2014
+The time is Fri Feb 14 1:25:35 PM 2014
 
 Advantages and disadvantages
 ========================================================
@@ -114,16 +114,15 @@ Very low barrier to documentation of code with roxygen2
 
 Need a document formatting language
 ========================================================
-Human-readable
-
-Markdown
-
-R Markdown
-
-***
 
 ![alt text](figures/markdown.png)
 
+Markdown: lightweight, human-readable document formatting syntax
+based on email text formatting
+
+***
+
+R Markdown: minor extensions to allow R code display and execution, embed images in html files, equations
 
 One package to rule them all
 ========================================================
@@ -174,7 +173,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot1.html
 ' scrolling='no' seamless
 class='rChart nvd3 '
 id=iframe-
-chart1e3c3a925966
+chart1c487d8f7aa9
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -186,7 +185,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot2.html
 ' scrolling='no' seamless
 class='rChart nvd3 '
 id=iframe-
-chart1e3c13a81d66
+chart1c483e936705
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -197,7 +196,7 @@ Interactive charts in the browser with brief code
 require(rCharts)
 n1 <- nPlot(mpg ~ wt, data = mtcars, type = 'scatterChart')
 n1$addParams(width = 600, height = 300)
-n1
+n1 
 ```
 ```
 require(rCharts)
