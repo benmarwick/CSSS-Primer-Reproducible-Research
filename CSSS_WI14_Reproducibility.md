@@ -83,7 +83,7 @@ Literate statistical programming
 ***
 
 For example...
-I want to calculate the current time in R.
+Let's calculate the current time in R.
 
 ```r
 time <- format(Sys.time(), "%a %b %d %X %Y")
@@ -93,7 +93,7 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Thu Feb 13 2:35:24 AM 2014
+The time is Thu Feb 13 5:32:15 PM 2014
 
 Advantages and disadvantages
 ========================================================
@@ -121,9 +121,6 @@ R packages: the ideal 'Compendium'
 
 >both a container for the different elements that make up the document and its computations (i.e. text, code, data, etc.), and as a means for distributing, managing and updating the collection... allow us to move from an era of advertisement to one where our scholarship itself is published <small>- Gentleman and Temple Lang 2004</small>
 
-
-
-
 ========================================================
 Very low barrier to documentation of code with roxygen2
 
@@ -144,11 +141,15 @@ R Markdown
 
 One package to rule them all
 ========================================================
-knitr
+knitr - descendant of Sweave
+
+![alt text](figures/knitr.png)
 
 ***
 
-![alt text](figures/knitr.png)
+'dynamic documents' put narrative and code in the same location
+
+When data or narrative are updated, the document is automatically updated
 
 
 Version control
@@ -227,8 +228,6 @@ is hard
 
 Changing the culture and reward structure
 ========================================================
-
-
 
 
 Colophon
