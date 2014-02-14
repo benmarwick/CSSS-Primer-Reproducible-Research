@@ -108,7 +108,7 @@ R packages: the ideal 'Compendium'
 ========================================================
 Very low barrier to documentation of code with roxygen2
 
-![alt text](figures/packages.png)
+<img src="figures/roxygen2.jpg" alt="alt text" width="800">
 
 Need a document formatting language
 ========================================================
@@ -145,7 +145,7 @@ Version control
 
 >Costs
 
-- 2-3 days to learn
+- unfamiliar to most social scientists 
 - Takes a long time to master
 
 ***

@@ -79,7 +79,7 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Fri Feb 14 1:25:35 PM 2014
+The time is Fri Feb 14 1:53:29 PM 2014
 
 Advantages and disadvantages
 ========================================================
@@ -110,7 +110,7 @@ R packages: the ideal 'Compendium'
 ========================================================
 Very low barrier to documentation of code with roxygen2
 
-![alt text](figures/packages.png)
+<img src="figures/roxygen2.jpg" alt="alt text" width="800">
 
 Need a document formatting language
 ========================================================
@@ -147,7 +147,7 @@ Version control
 
 >Costs
 
-- 2-3 days to learn
+- unfamiliar to most social scientists 
 - Takes a long time to master
 
 ***
@@ -173,7 +173,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot1.html
 ' scrolling='no' seamless
 class='rChart nvd3 '
 id=iframe-
-chart1c487d8f7aa9
+chart900bbc574a
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -185,7 +185,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot2.html
 ' scrolling='no' seamless
 class='rChart nvd3 '
 id=iframe-
-chart1c483e936705
+chart9008c55d13
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
