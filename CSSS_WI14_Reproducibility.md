@@ -93,7 +93,7 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Fri Feb 14 2:40:59 AM 2014
+The time is Fri Feb 14 2:55:02 AM 2014
 
 Advantages and disadvantages
 ========================================================
@@ -181,7 +181,6 @@ RStudio 'projects' make version control trivial
 
 ![alt text](figures/rstudio.png)
 
-
 Interactive charts in the browser with the rCharts package
 ========================================================
 <iframe src='
@@ -189,7 +188,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot1.html
 ' scrolling='no' seamless
 class='rChart nvd3 '
 id=iframe-
-chart1f307d144742
+chart1bec17235503
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -201,10 +200,9 @@ CSSS_WI14_Reproducibility-figure/nvd3plot2.html
 ' scrolling='no' seamless
 class='rChart nvd3 '
 id=iframe-
-chart1f3048406735
+chart1bec7f3119e9
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
-
 
 
 The Hierarchy of Code Reproducibility

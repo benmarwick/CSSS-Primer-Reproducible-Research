@@ -167,10 +167,11 @@ RStudio 'projects' make version control trivial
 
 ![alt text](figures/rstudio.png)
 
-
 Interactive charts in the browser with the rCharts package
 ========================================================
 ```{r nvd3plot1, results = 'asis', comment = NA, message = F, echo = F} 
+# this only works when the presentation is saved as HTML
+# and when the cache folder is available 
 require(rCharts)
 n1 <- nPlot(mpg ~ wt, data = mtcars, type = 'scatterChart')
 n1
@@ -179,12 +180,13 @@ n1
 Interactive charts in the browser with the rCharts package
 ========================================================
 ```{r nvd3plot2, results = 'asis', comment = NA, message = F, echo = F} 
+# this only works when the presentation is saved as HTML
+# and when the cache folder is available
 require(rCharts)
 hair_eye_male <- subset(as.data.frame(HairEyeColor), Sex == "Male")
 n2 <- nPlot(Freq ~ Hair, group = "Eye", data = hair_eye_male, type = "multiBarChart")
 n2
 ```
-
 
 The Hierarchy of Code Reproducibility
 ========================================================
