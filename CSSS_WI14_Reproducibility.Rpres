@@ -2,6 +2,9 @@ Reproducible Research: A primer for the social sciences
 ========================================================
 author: Ben Marwick
 date: February 2014
+---
+ext_widgets : {rCharts: libraries/nvd3}
+---
 
 
 
@@ -167,6 +170,20 @@ RStudio 'projects' make version control trivial
 
 Interactive charts in the browser with the rCharts package
 ========================================================
+```{r nvd3plot1, results = 'asis', comment = NA, message = F, echo = F} 
+require(rCharts)
+n1 <- nPlot(mpg ~ wt, data = mtcars, type = 'scatterChart')
+n1
+```
+
+Interactive charts in the browser with the rCharts package
+========================================================
+```{r nvd3plot2, results = 'asis', comment = NA, message = F, echo = F} 
+require(rCharts)
+hair_eye_male <- subset(as.data.frame(HairEyeColor), Sex == "Male")
+n2 <- nPlot(Freq ~ Hair, group = "Eye", data = hair_eye_male, type = "multiBarChart")
+n2
+```
 
 
 The Hierarchy of Code Reproducibility

@@ -2,6 +2,9 @@ Reproducible Research: A primer for the social sciences
 ========================================================
 author: Ben Marwick
 date: February 2014
+---
+ext_widgets : {rCharts: libraries/nvd3}
+---
 
 
 
@@ -90,7 +93,7 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Fri Feb 14 2:32:55 AM 2014
+The time is Fri Feb 14 2:40:59 AM 2014
 
 Advantages and disadvantages
 ========================================================
@@ -181,6 +184,27 @@ RStudio 'projects' make version control trivial
 
 Interactive charts in the browser with the rCharts package
 ========================================================
+<iframe src='
+CSSS_WI14_Reproducibility-figure/nvd3plot1.html
+' scrolling='no' seamless
+class='rChart nvd3 '
+id=iframe-
+chart1f307d144742
+></iframe>
+<style>iframe.rChart{ width: 100%; height: 400px;}</style>
+
+
+Interactive charts in the browser with the rCharts package
+========================================================
+<iframe src='
+CSSS_WI14_Reproducibility-figure/nvd3plot2.html
+' scrolling='no' seamless
+class='rChart nvd3 '
+id=iframe-
+chart1f3048406735
+></iframe>
+<style>iframe.rChart{ width: 100%; height: 400px;}</style>
+
 
 
 The Hierarchy of Code Reproducibility
