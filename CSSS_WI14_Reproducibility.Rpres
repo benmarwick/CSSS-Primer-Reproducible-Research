@@ -245,14 +245,12 @@ Easily convert markdown file to many formats (HTML, PDF, DOCX, etc)
 
 Depositing Paper, code and data
 ========================================================
->Payoffs
-
+Payoffs
 - Free space for hosting
 - Assignment of persistent DOIs
 - Tracking citation metrics (FigShare, ORCID)
 
->Costs
-
+Costs
 - Sometimes license restrictions
 - Limited or no private storage space
 
@@ -279,8 +277,6 @@ Compiled into HTML using RStudio
 
 Source code hosting:
 https://github.com/benmarwick/CSSS-Primer-Reproducible-Research
-
-FigShare DOI:
 
 ORCID: http://orcid.org/0000-0001-7879-4531
 

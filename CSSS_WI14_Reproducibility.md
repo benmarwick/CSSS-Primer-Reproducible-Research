@@ -111,7 +111,7 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Sat Feb 15 2:52:38 AM 2014
+The time is Sat Feb 15 2:55:31 AM 2014
 
 Advantages and disadvantages
 ========================================================
@@ -205,7 +205,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot1.html
 nvd3
  '
 id=iframe-
-chart1b781f1440de
+chart169c1ff910c4
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -218,7 +218,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot2.html
 nvd3
  '
 id=iframe-
-chart1b78530938e3
+chart169c649cbd7
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -250,14 +250,12 @@ Easily convert markdown file to many formats (HTML, PDF, DOCX, etc)
 
 Depositing Paper, code and data
 ========================================================
->Payoffs
-
+Payoffs
 - Free space for hosting
 - Assignment of persistent DOIs
 - Tracking citation metrics (FigShare, ORCID)
 
->Costs
-
+Costs
 - Sometimes license restrictions
 - Limited or no private storage space
 
@@ -284,8 +282,6 @@ Compiled into HTML using RStudio
 
 Source code hosting:
 https://github.com/benmarwick/CSSS-Primer-Reproducible-Research
-
-FigShare DOI:
 
 ORCID: http://orcid.org/0000-0001-7879-4531
 
