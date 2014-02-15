@@ -111,7 +111,7 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Sat Feb 15 2:55:31 AM 2014
+The time is Sat Feb 15 3:05:23 AM 2014
 
 Advantages and disadvantages
 ========================================================
@@ -154,7 +154,10 @@ based on email text formatting
 
 ***
 
-R Markdown: minor extensions to allow R code display and execution, embed images in html files (convenient for sharing), equations
+R Markdown: 
+- minor extensions to allow R code display and execution
+- embed images in html files (convenient for sharing)
+- equations
 
 One package to rule them all
 ========================================================
@@ -170,7 +173,7 @@ knitr - descendant of Sweave
 When data or narrative are updated, the document is automatically updated
 
 
-Version control
+Version control: Track changes for code
 ========================================================
 Payoffs
 - Eases collaboration
@@ -205,7 +208,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot1.html
 nvd3
  '
 id=iframe-
-chart169c1ff910c4
+charta385aef4f16
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -218,7 +221,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot2.html
 nvd3
  '
 id=iframe-
-chart169c649cbd7
+charta383d7a3a23
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -248,7 +251,7 @@ Easily convert markdown file to many formats (HTML, PDF, DOCX, etc)
 
 ***
 
-Depositing Paper, code and data
+Depositing paper, code and data
 ========================================================
 Payoffs
 - Free space for hosting

@@ -152,7 +152,10 @@ based on email text formatting
 
 ***
 
-R Markdown: minor extensions to allow R code display and execution, embed images in html files (convenient for sharing), equations
+R Markdown: 
+- minor extensions to allow R code display and execution
+- embed images in html files (convenient for sharing)
+- equations
 
 One package to rule them all
 ========================================================
@@ -168,7 +171,7 @@ knitr - descendant of Sweave
 When data or narrative are updated, the document is automatically updated
 
 
-Version control
+Version control: Track changes for code
 ========================================================
 Payoffs
 - Eases collaboration
@@ -243,7 +246,7 @@ Easily convert markdown file to many formats (HTML, PDF, DOCX, etc)
 
 ***
 
-Depositing Paper, code and data
+Depositing paper, code and data
 ========================================================
 Payoffs
 - Free space for hosting
