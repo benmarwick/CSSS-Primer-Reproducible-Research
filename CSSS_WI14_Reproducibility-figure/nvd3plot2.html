@@ -20,23 +20,23 @@
     </style>
     
   </head>
-  <body >
+  <body>
+    <div id='chart1b78530938e3' class='rChart nvd3'></div>  
     
-    <div id = 'chart9008c55d13' class = 'rChart nvd3'></div>    
     <script type='text/javascript'>
  $(document).ready(function(){
-      drawchart9008c55d13()
+      drawchart1b78530938e3()
     });
-    function drawchart9008c55d13(){  
+    function drawchart1b78530938e3(){  
       var opts = {
- "dom": "chart9008c55d13",
+ "dom": "chart1b78530938e3",
 "width":    600,
 "height":    300,
 "x": "Hair",
 "y": "Freq",
 "group": "Eye",
 "type": "multiBarChart",
-"id": "chart9008c55d13" 
+"id": "chart1b78530938e3" 
 },
         data = [
  {
@@ -137,7 +137,7 @@
 } 
 ]
   
-      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus")) {
         var data = d3.nest()
           .key(function(d){
             //return opts.group === undefined ? 'main' : d[opts.group]
@@ -155,15 +155,10 @@
       
       nv.addGraph(function() {
         var chart = nv.models[opts.type]()
+          .x(function(d) { return d[opts.x] })
+          .y(function(d) { return d[opts.y] })
           .width(opts.width)
           .height(opts.height)
-          
-        if (opts.type != "bulletChart"){
-          chart
-            .x(function(d) { return d[opts.x] })
-            .y(function(d) { return d[opts.y] })
-        }
-          
          
         
           
@@ -185,6 +180,5 @@
     };
 </script>
     
-    <script></script>    
   </body>
 </html>
