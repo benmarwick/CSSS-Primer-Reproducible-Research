@@ -6,6 +6,18 @@ date: February 2014
 ext_widgets : {rCharts: libraries/nvd3}
 ---
 
+Definitions
+========================================================
+
+*Replicable* refers to the ability to run a code and produce
+exactly the same results as published 
+
+*Reproducible* refers to the ability to create a code that
+independently verifies the published results using
+the information provided
+
+>"the goal of reproducible research is to tie specific instructions to data analysis and experimental data so that scholarship can be recreated, better understood and verified." <small>- Max Kuhn, CRAN Task View: Reproducible Research</small>
+
 Motivations
 ========================================================
 
@@ -18,15 +30,15 @@ Benefits
 =======================================================
 - Verification & Reliability: Easier to find and fix bugs. The results you produce today will be the same results you will produce tomorrow.
 - Transparency: Leads increased citation count, broader impact, improved institutional memory
-- Efficiency: Via de-duplication of effort. Payoff in the (not so) long run
+- Efficiency: Reuse allows for de-duplication of effort. Payoff in the (not so) long run
 - Flexibility: When you dont 'point-and-click' you gain many new analytic options.
 
 Restrictions
 =======================================================
 - Classified or sensitive data
 - Nondisclosure agreements
-- Software licensing issues
-- Inertia
+- Intellectual property & software licensing issues
+- Inertia & embarassment 
 
 Spectrum of reproducibility
 =======================================================
@@ -42,22 +54,21 @@ Common practice in social sciences
 ========================================================
 - Enter data in Excel
 - Use Excel for data cleaning, etc
-- Generate descriptive statistics (counts,means, etc) in Excel
-- Import data into SPSS/SAS/Stata for analysis
+- Generate descriptive statistics in Excel
+- Import data into SPSS/SAS/Stata for further analysis
 - Use point-and-click options to run statistical analyses
-- copy-paste output to Word document
+- Copy & paste output to Word document, repeatedly 
 
 ***
 
-- Missing data are handled inconsistently and sometimes incorrectly
+- Missing data are handled inconsistently and sometimes incorrectly 
 - Excel uses poor algorithms for many functions
-- Excel does not treat tied observations correctly when ranking
 - Scripting is possible but rare 
 
 Click trails are ephemeral 
 ========================================================
 - GUIs and copy-paste are bad for reproducibility 
-- A lot of manual & ad hoc data handling
+- A lot of manual & ad hoc data handling - error prone
 - Leaves no trace - no audit trail
 - Difficult to document
 - Difficult to remember
@@ -90,9 +101,9 @@ Scripted analyses endure
 
 ***
 
-Plain text files and UTF-8 encoding will be readable for a long time
-
-They are much more accessible
+- Allow for automation and communication of process
+- Plain text files and UTF-8 encoding will be readable for a long time
+- They are much more accessible
 
 Literate statistical programming 
 ========================================================
@@ -111,7 +122,7 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Sat Feb 15 3:05:23 AM 2014
+The time is Sun Feb 16 2:40:49 AM 2014
 
 Advantages and disadvantages
 ========================================================
@@ -129,9 +140,9 @@ Need a programming language
 ========================================================
 Machine-readable
 
-R: Free, open source, cross-platform, highly interactive, huge user community
+R: Free, open source, cross-platform, highly interactive, huge user community in academica and private sector
 
-R packages: the ideal 'Compendium'
+R packages: the ideal 'Compendium'?
 
 ![alt text](figures/r-project.jpg)
 
@@ -139,8 +150,8 @@ R packages: the ideal 'Compendium'
 
 >both a container for the different elements that make up the document and its computations (i.e. text, code, data, etc.), and as a means for distributing, managing and updating the collection... allow us to move from an era of advertisement to one where our scholarship itself is published <small>- Gentleman and Temple Lang 2004</small>
 
-========================================================
 Very low barrier to documentation of code with roxygen2
+========================================================
 
 <img src="figures/roxygen2.jpg" alt="alt text" width="800">
 
@@ -168,21 +179,22 @@ knitr - descendant of Sweave
 
 ***
 
-'dynamic documents' put narrative and code in the same location
-
-When data or narrative are updated, the document is automatically updated
+- 'dynamic documents' put narrative and code in the same location
+- When data or narrative are updated, the document is automatically updated
+- Data treated as 'read only'
+- Output treated as disposable
 
 
 Version control: Track changes for code
 ========================================================
 Payoffs
 - Eases collaboration
-- Can track changes in any file type, and who made them
+- Can track changes in any file type (plain text is best), and who made them
 - Can revert file to any point in its tracked history
 
 Costs
-- unfamiliar to most social scientists 
-- Takes a very long time to master
+- Unfamiliar to most social scientists 
+- Takes time to master
 
 ***
 
@@ -192,9 +204,11 @@ Costs
 
 Environment for reproducible research
 ========================================================
-RStudio has integrated R console, support for markdown and git
+RStudio is a free, open source, cross-platform integrated development environment for R
 
-RStudio 'projects' make version control trivial
+Has integrated R console, deep support for markdown and git
+
+RStudio 'projects' make version control & document preparation trivial
 
 ***
 
@@ -208,7 +222,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot1.html
 nvd3
  '
 id=iframe-
-charta385aef4f16
+chart162c60677577
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -221,7 +235,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot2.html
 nvd3
  '
 id=iframe-
-charta383d7a3a23
+chart162c4df1d13
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -237,13 +251,15 @@ open_notebook()
 The Hierarchy of Code Reproducibility 
 ========================================================
 - Good: Use an integrated development environment (IDE). Keep your code in one place, let it do what its supposed to. (RStudio)
-- Better: Use version control. Help yourself keep track of changes, fix bugs and improve project management (Git & GitHub or BitBucket)
-- Best: Use embedded code. Explicitly link code and text, save yourself time, save reviewers time, improve your code. (R Markdown & knitr)
+- Better: Use version control. Help yourself keep track of changes, fix bugs and improve project management (RStudio & Git & GitHub or BitBucket)
+- Best: Use embedded code. Explicitly link code and text, save yourself time, save reviewers time, improve your code. (RStudio & Git & GitHub or BitBucket & R Markdown & knitr)
 
 
-Releasing output into the wild
+Use Pandoc to generate output from RStudio in many popular formats
 ========================================================
-pandoc
+`
+`
+
 
 A universal document converter
 
@@ -270,12 +286,17 @@ Ongoing problems
 ========================================================
 - Reproducing big data and supercomputing research is hard
 - Making sure that source code works on other people's computers
-is hard
+is hard (but not really our job - most licenses absolve us)
 - Keeping detailed enough records is hard
 
 Changing the culture and reward structure
 ========================================================
-- Significant discipline and effort required
+- Train students by making homework and assignments reproducible 
+- Publish examples of reproducible research in our field
+- Request code & data when reviewing
+- Submit to and review for journals that support reproducible research
+- Critically review and audit data management plans in grant proposals
+- Consider reproducibility wherever possible in hiring, promotion, and reference letters.
 
 Colophon
 ========================================================
