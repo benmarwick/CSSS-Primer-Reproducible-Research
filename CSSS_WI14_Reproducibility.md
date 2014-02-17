@@ -53,10 +53,9 @@ History of reproducible research
 - Write scientiﬁc paper [1660?]
 - Publish a pidgin algorithm and describe simulation datasets [1950?]
 - Sell magtape of code and data [1970?]
-- Place idiosyncratic software at website.
-- Place idiosyncratic dataset at Website [1991?]
-- Publish datasets and scripts at Website [2000?]
-- Hosted & integrated code and data [??]
+- Place idiosyncratic dataset & software at website [1991?]
+- Publish datasets and scripts at website [2000?]
+- Hosted & integrated code and data [2020?]
 
 <small>Gavish & Gonoho AAAS 2011</small>
 
@@ -143,7 +142,7 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Sun Feb 16 9:43:12 PM 2014
+The time is Mon Feb 17 12:30:28 AM 2014
 
 Advantages and disadvantages
 ========================================================
@@ -169,7 +168,7 @@ R packages: the ideal 'Compendium'?
 
 ***
 
->both a container for the different elements that make up the document and its computations (i.e. text, code, data, etc.), and as a means for distributing, managing and updating the collection... allow us to move from an era of advertisement to one where our scholarship itself is published <small>- Gentleman and Temple Lang 2004</small>
+>"both a container for the different elements that make up the document and its computations (i.e. text, code, data, etc.), and as a means for distributing, managing and updating the collection... allow us to move from an era of advertisement to one where our scholarship itself is published" <small>- Gentleman and Temple Lang 2004</small>
 
 Very low barrier to documentation of code with roxygen2
 ========================================================
@@ -182,7 +181,7 @@ Need a document formatting language
 <img src="figures/markdown.png" alt="alt text" width="400">
 
 Markdown: lightweight, human-readable document formatting syntax
-based on email text formatting
+based on email text formatting (ie. LaTeX-lite-for-non-CS-people)
 
 ***
 
@@ -200,10 +199,27 @@ knitr - descendant of Sweave
 
 ***
 
-- 'dynamic documents' put narrative and code in the same location
+- 'dynamic documents' put narrative and code in the same file
 - When data or narrative are updated, the document is automatically updated
 - Data treated as 'read only'
 - Output treated as disposable
+
+Use Pandoc to generate output from RStudio in many popular formats
+========================================================
+`
+`
+
+A universal document converter, open source, cross-platform
+
+Easily convert markdown file to many formats (HTML, PDF, DOCX, etc)
+
+In R, write code and narrative in R Markdown -> use knitr to get Markdown (with figures and results) -> use pandoc to get PDF/DOCX
+
+***
+`
+`
+
+![alt text](figures/pandoc-workflow-rmd-md.png)
 
 Version control: Track changes for code
 ========================================================
@@ -226,9 +242,9 @@ Environment for reproducible research
 ========================================================
 RStudio is a free, open source, cross-platform integrated development environment for R
 
-Has integrated R console, deep support for markdown and git
+Has an integrated R console, deep support for markdown and git, a file manager, a text editor, a workspace browser, a data viewer, package development tools, etc. etc.
 
-RStudio 'projects' make version control & document preparation trivial
+RStudio 'projects' make version control & document preparation simple
 
 ***
 
@@ -242,7 +258,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot1.html
 nvd3
  '
 id=iframe-
-chart1d6094218fb
+chart1ae82e5c31
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -255,7 +271,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot2.html
 nvd3
  '
 id=iframe-
-chart1d604f3332ec
+chart1ae8250d55
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -267,45 +283,34 @@ library(rCharts)
 open_notebook()
 ```
 
-Use Pandoc to generate output from RStudio in many popular formats
-========================================================
-`
-`
-
-A universal document converter
-
-Easily convert markdown file to many formats (HTML, PDF, DOCX, etc)
-
-***
-
-Depositing paper, code and data
+Depositing code and data
 ========================================================
 Payoffs
 - Free space for hosting
 - Assignment of persistent DOIs
-- Tracking citation metrics (FigShare, ORCID)
+- Tracking citation metrics (figshare, ORCID)
 
 Costs
-- Sometimes license restrictions
+- Sometimes license restrictions (CC-BY & CC0)
 - Limited or no private storage space
 
 ***
 ![alt text](figures/figshare.png)
 ![alt text](figures/dryad.png)
 
-The Hierarchy of Reproducibility 
+A Hierarchy of Reproducibility 
 ========================================================
-- Good: Use an integrated development environment (IDE). Keep your code in one place, let it do what it’s supposed to (RStudio)
-- Better: Use version control. Help yourself keep track of changes, fix bugs and improve project management (RStudio & Git & GitHub or BitBucket)
-- Best: Use embedded narrative and code to explicitly link code, text and data, save yourself time, save reviewers time, improve your code. (RStudio & Git & GitHub or BitBucket & R Markdown & knitr & data repository)
+- **Good**: Use an integrated development environment (IDE). Keep your code in one place, let it do what it’s supposed to (RStudio)
+- **Better**: Use version control. Help yourself keep track of changes, fix bugs and improve project management (RStudio & Git & GitHub or BitBucket)
+- **Best**: Use embedded narrative and code to explicitly link code, text and data, save yourself time, save reviewers time, improve your code. (RStudio & Git & GitHub or BitBucket & R Markdown & knitr & data repository)
 
 Ongoing problems
 ========================================================
+- Keeping detailed enough records is hard
 - Reproducing big data and supercomputing research is hard
 - Making sure that source code works on other people's computers
 is hard (but not really our job - most licenses absolve us)
 - Technology for data and figures URIs not yet widely available 
-- Keeping detailed enough records is hard
 - All of this is time consuming and distracts from what our culture currently values most - more publication!
 
 ========================================================
@@ -316,29 +321,40 @@ is hard (but not really our job - most licenses absolve us)
 <img src="figures/VictoriaStoddenIASSISTJune2010-reasons-to.png" alt="alt text" width="800">
 <small><small><small>Stodden (IASSIST 2010) sampled American academics registered at the Machine Learning conference NIPS (134 responses from 593 requests (23%). Red = communitarian norms, Blue = private incentives</small></small></small>
 
-Changing the culture and reward structure
-========================================================
-- Train students by making homework and assignments reproducible 
-- Publish examples of reproducible research in our field
-- Request code & data when reviewing
-- Submit to and review for journals that support reproducible research
-- Critically review and audit data management plans in grant proposals
-- Consider reproducibility wherever possible in hiring, promotion, and reference letters.
-
 Standards
 ========================================================
-- Biostatistics kite-marking (Peng 2009): D (data), C (code), R (both)
-- Reproducible Research Standard (Stodden 2009)
- - Creative Commons Attribution license (CC BY) on media such as text, figures,
- - Attribution license on code: such as Apache 2.0, MIT, LGPL
- - Data under CC0 or Science Commons Open Access Data Protocol
- - Original selection and arrangement" of the data, under CC BY or attribution open source license.
+- _Biostatistics_ kite-marking of articles (Peng 2009): D (data), C (code), R (both)
+- Reproducible Research Standard (Stodden 2009), scientists should release 
+ - The full compendium on the internet
+ - Media such as text, figures, tables with Creative Commons Attribution license (CC-BY) 
+ - Code with one of Apache 2.0, MIT, LGPL, BSD, etc.
+ - Original "selection and arrangement" of data with CC0 or CC-BY
 
-Colophon
+Future of Reproducible Research is Stodden's Standard
 ========================================================
-Presentation written in Markdown
+- Promote culture change through positive attribution 
+- Implement mechanisms to indicate & encourage **degrees of compliance** (ie. easily identifiable logo & clear definitions for different levels of reproducibility):
+ - **'Reproducible'**: compendium of text-code-data online
+ - **'Reproduced'**: compendium available and independently reproduced 
+ - **'Semi-Reproducible'**: when the full compendium is not released
+ - **'Semi-Reproduced'**: independent reproduction with other data
+ - **'Perpetually Reproducible'**: streaming data
+ 
+Our role in the future of Reproducible Research
+========================================================
+incremental: true
+- Train students by putting homework, assignments & dissertations on the Reproducible Research Standard spectrum
+- Publish examples of reproducible research in our field
+- Request code & data when reviewing
+- Submit to & review for journals that support reproducible research
+- Critically review & audit data management plans in grant proposals
+- Consider reproducibility wherever possible in hiring, promotion & reference letters.
 
-Compiled into HTML using RStudio
+Thanks! (& Colophon)
+========================================================
+Presentation written in Markdown (R Presentation)
+
+Compiled into HTML5 using RStudio
 
 Source code hosting:
 https://github.com/benmarwick/CSSS-Primer-Reproducible-Research
