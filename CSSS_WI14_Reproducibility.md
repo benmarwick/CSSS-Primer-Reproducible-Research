@@ -9,14 +9,11 @@ ext_widgets : {rCharts: libraries/nvd3}
 Definitions
 ========================================================
 
-*Replicable* refers to the ability to run a code and produce
-exactly the same results as published 
+*Replicable* refers to the ability to produce **exactly** the same results as published. Other people get exactly the same results when doing exactly the same thing. Technical: cf. validation and verification
 
-*Reproducible* refers to the ability to create a code that
-independently verifies the published results using
-the information provided
+*Reproducible* refers to the ability to create a code that independently upholds the published results using the information provided. Checking the results from the fixed digital form of data and code from the original study. Something similar happens in other people's hands. Substantive: possibly by a new implementation
 
->"the goal of reproducible research is to tie specific instructions to data analysis and experimental data so that scholarship can be recreated, better understood and verified." <small>- Max Kuhn, CRAN Task View: Reproducible Research</small>
+><small>"The goal of reproducible research is to tie specific instructions to data analysis and experimental data so that scholarship can be recreated, better understood and verified." <small>- Max Kuhn, CRAN Task View: Reproducible Research</small></small>
 
 Motivations
 ========================================================
@@ -31,14 +28,37 @@ Benefits
 - Verification & Reliability: Easier to find and fix bugs. The results you produce today will be the same results you will produce tomorrow.
 - Transparency: Leads increased citation count, broader impact, improved institutional memory
 - Efficiency: Reuse allows for de-duplication of effort. Payoff in the (not so) long run
-- Flexibility: When you dont 'point-and-click' you gain many new analytic options.
+- Flexibility: When you don’t 'point-and-click' you gain many new analytic options.
 
-Restrictions
+Limitations
 =======================================================
+Technical
 - Classified or sensitive data
 - Nondisclosure agreements
-- Intellectual property & software licensing issues
-- Inertia & embarassment 
+- Intellectual property 
+- Software licensing issues
+- Neither necessary nor sufficient for correctness (but essential for dispute resolution)
+
+***
+
+Cultural & personal 
+
+- Very few researchers follow even minimal reproducibility standards.
+- No-one expects or requires reproducibility 
+- No uniform standards of reproducibility, so no established user base
+- Inertia & embarassment
+
+History of reproducible research
+=======================================================
+- Write scientiﬁc paper [1660?]
+- Publish a pidgin algorithm and describe simulation datasets [1950?]
+- Sell magtape of code and data [1970?]
+- Place idiosyncratic software at website.
+- Place idiosyncratic dataset at Website [1991?]
+- Publish datasets and scripts at Website [2000?]
+- Hosted & integrated code and data [??]
+
+<small>Gavish & Gonoho AAAS 2011</small>
 
 Spectrum of reproducibility
 =======================================================
@@ -69,6 +89,7 @@ Click trails are ephemeral
 ========================================================
 - GUIs and copy-paste are bad for reproducibility 
 - A lot of manual & ad hoc data handling - error prone
+- Column and row offsets are common
 - Leaves no trace - no audit trail
 - Difficult to document
 - Difficult to remember
@@ -122,7 +143,7 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Sun Feb 16 2:40:49 AM 2014
+The time is Sun Feb 16 9:43:12 PM 2014
 
 Advantages and disadvantages
 ========================================================
@@ -184,12 +205,11 @@ knitr - descendant of Sweave
 - Data treated as 'read only'
 - Output treated as disposable
 
-
 Version control: Track changes for code
 ========================================================
 Payoffs
 - Eases collaboration
-- Can track changes in any file type (plain text is best), and who made them
+- Can track changes in any file type (ideally plain text), and who made them
 - Can revert file to any point in its tracked history
 
 Costs
@@ -222,7 +242,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot1.html
 nvd3
  '
 id=iframe-
-chart162c60677577
+chart1d6094218fb
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -235,7 +255,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot2.html
 nvd3
  '
 id=iframe-
-chart162c4df1d13
+chart1d604f3332ec
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -247,19 +267,10 @@ library(rCharts)
 open_notebook()
 ```
 
-
-The Hierarchy of Code Reproducibility 
-========================================================
-- Good: Use an integrated development environment (IDE). Keep your code in one place, let it do what its supposed to. (RStudio)
-- Better: Use version control. Help yourself keep track of changes, fix bugs and improve project management (RStudio & Git & GitHub or BitBucket)
-- Best: Use embedded code. Explicitly link code and text, save yourself time, save reviewers time, improve your code. (RStudio & Git & GitHub or BitBucket & R Markdown & knitr)
-
-
 Use Pandoc to generate output from RStudio in many popular formats
 ========================================================
 `
 `
-
 
 A universal document converter
 
@@ -282,12 +293,28 @@ Costs
 ![alt text](figures/figshare.png)
 ![alt text](figures/dryad.png)
 
+The Hierarchy of Reproducibility 
+========================================================
+- Good: Use an integrated development environment (IDE). Keep your code in one place, let it do what it’s supposed to (RStudio)
+- Better: Use version control. Help yourself keep track of changes, fix bugs and improve project management (RStudio & Git & GitHub or BitBucket)
+- Best: Use embedded narrative and code to explicitly link code, text and data, save yourself time, save reviewers time, improve your code. (RStudio & Git & GitHub or BitBucket & R Markdown & knitr & data repository)
+
 Ongoing problems
 ========================================================
 - Reproducing big data and supercomputing research is hard
 - Making sure that source code works on other people's computers
 is hard (but not really our job - most licenses absolve us)
+- Technology for data and figures URIs not yet widely available 
 - Keeping detailed enough records is hard
+- All of this is time consuming and distracts from what our culture currently values most - more publication!
+
+========================================================
+<img src="figures/VictoriaStoddenIASSISTJune2010-reasons.png" alt="alt text" width="800">
+<small><small><small>Stodden (IASSIST 2010) sampled American academics registered at the Machine Learning conference NIPS (134 responses from 593 requests (23%). Red = communitarian norms, Blue = private incentives</small></small></small>
+
+========================================================
+<img src="figures/VictoriaStoddenIASSISTJune2010-reasons-to.png" alt="alt text" width="800">
+<small><small><small>Stodden (IASSIST 2010) sampled American academics registered at the Machine Learning conference NIPS (134 responses from 593 requests (23%). Red = communitarian norms, Blue = private incentives</small></small></small>
 
 Changing the culture and reward structure
 ========================================================
@@ -297,6 +324,15 @@ Changing the culture and reward structure
 - Submit to and review for journals that support reproducible research
 - Critically review and audit data management plans in grant proposals
 - Consider reproducibility wherever possible in hiring, promotion, and reference letters.
+
+Standards
+========================================================
+- Biostatistics kite-marking (Peng 2009): D (data), C (code), R (both)
+- Reproducible Research Standard (Stodden 2009)
+ - Creative Commons Attribution license (CC BY) on media such as text, figures,
+ - Attribution license on code: such as Apache 2.0, MIT, LGPL
+ - Data under CC0 or Science Commons Open Access Data Protocol
+ - Original selection and arrangement" of the data, under CC BY or attribution open source license.
 
 Colophon
 ========================================================
