@@ -160,7 +160,7 @@ Machine-readable
 
 R: Free, open source, cross-platform, highly interactive, huge user community in academica and private sector
 
-R packages: the ideal 'Compendium'?
+R packages: an ideal 'Compendium'?
 
 ![alt text](figures/r-project.jpg)
 
@@ -281,9 +281,9 @@ open_notebook()
 Depositing code and data
 ========================================================
 Payoffs
-- Free space for hosting
+- Free space for hosting (and paid options)
 - Assignment of persistent DOIs
-- Tracking citation metrics (figshare, ORCID)
+- Tracking citation metrics 
 
 Costs
 - Sometimes license restrictions (CC-BY & CC0)
@@ -414,5 +414,6 @@ See Rpres file for full references
 # http://ivory.idyll.org/blog/replication-i.html
 # http://www.mendeley.com/groups/1142301/reproducible-research/
 # http://sciencecodemanifesto.org/
+# http://researchcompendia.org/
 ```
 

@@ -142,7 +142,7 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Mon Feb 17 12:30:28 AM 2014
+The time is Mon Feb 17 4:18:48 PM 2014
 
 Advantages and disadvantages
 ========================================================
@@ -162,7 +162,7 @@ Machine-readable
 
 R: Free, open source, cross-platform, highly interactive, huge user community in academica and private sector
 
-R packages: the ideal 'Compendium'?
+R packages: an ideal 'Compendium'?
 
 ![alt text](figures/r-project.jpg)
 
@@ -258,7 +258,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot1.html
 nvd3
  '
 id=iframe-
-chart1ae82e5c31
+charte7041e75d6f
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -271,7 +271,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot2.html
 nvd3
  '
 id=iframe-
-chart1ae8250d55
+charte7028415c13
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -286,9 +286,9 @@ open_notebook()
 Depositing code and data
 ========================================================
 Payoffs
-- Free space for hosting
+- Free space for hosting (and paid options)
 - Assignment of persistent DOIs
-- Tracking citation metrics (figshare, ORCID)
+- Tracking citation metrics 
 
 Costs
 - Sometimes license restrictions (CC-BY & CC0)
