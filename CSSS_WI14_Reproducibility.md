@@ -8,9 +8,9 @@ ext_widgets : {rCharts: libraries/nvd3}
 
 Overview
 ========================================================
-- Definitions, motives, history, specturm
+- Definitions, motives, history, spectrum
 - Current practices
-- Selected tools to improve reproducibility 
+- A selection of tools to improve reproducibility 
 - Challenges, standards & our role in the future of reproducible research
 
 Definitions
@@ -59,7 +59,6 @@ Technical
 ***
 
 Cultural & personal 
-
 - Very few researchers follow even minimal reproducibility standards.
 - No-one expects or requires reproducibility 
 - No uniform standards of reproducibility, so no established user base
@@ -74,6 +73,10 @@ Bring the reader futher into the research pipeline
 =======================================================
 ![alt text](figures/peng-pipeline.jpg)
 <small>http://www.stodden.net/AMP2011/slides/pengslides.pdf</small>
+
+Current practices
+========================================================
+type: alert
 
 Common practice in the social sciences
 ========================================================
@@ -141,6 +144,10 @@ Scripted analyses endure
 - Improved transparency, automation, maintanability, accessibility, standardisation, modularity, portability, efficiency, communicability of process (what more could you want?)
 - But there's a steep learning curve 
 
+A selection of tools
+========================================================
+type: alert
+
 Literate statistical programming 
 ========================================================
 >"Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to humans what we want the computer to do."-- Donald E. Knuth, Literate Programming, 1984
@@ -158,7 +165,7 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Wed Feb 19 12:56:15 AM 2014
+The time is Wed Feb 19 1:17:15 AM 2014
 
 Advantages and disadvantages
 ========================================================
@@ -274,7 +281,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot1.html
 nvd3
  '
 id=iframe-
-chart1124771a2040
+chart1a002afe4da0
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -287,7 +294,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot2.html
 nvd3
  '
 id=iframe-
-chart11242ecc758a
+chart1a0010b21a
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -319,6 +326,10 @@ A Hierarchy of Reproducibility
 - **Good**: Use an integrated development environment (IDE). Keep your code in one place, let it do what it’s supposed to (RStudio)
 - **Better**: Use version control. Help yourself keep track of changes, fix bugs and improve project management (RStudio & Git & GitHub or BitBucket)
 - **Best**: Use embedded narrative and code to explicitly link code, text and data, save yourself time, save reviewers time, improve your code. (RStudio & Git & GitHub or BitBucket & R Markdown & knitr & data repository)
+
+Problems, standards & our role in the future
+========================================================
+type: alert
 
 Ongoing problems
 ========================================================
