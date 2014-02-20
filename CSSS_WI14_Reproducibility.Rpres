@@ -101,13 +101,13 @@ incremental: true
 
 ![alt text](figures/phd-comic-vcs.gif)
 
-Click trails are ephemeral 
+Click trails are ephemeral & dangerous
 ========================================================
-- GUIs and copy-paste are bad for reproducibility 
-- A lot of manual & ad hoc data handling
+- Lots of human effort for tedious & time-wasting tasks
+- Error-prone due to manual & ad hoc data handling
 - Column and row offsets are common
-- Difficult to document -  hard to reconstruct the 'click history' for a certain analysis
-- A lot of opportunity for error, frustration & time-wasting
+- Difficult to record -  hard to reconstruct a 'click history'
+- Tiny changes in data require extensive reworking efforts
 
 ***
 

@@ -101,13 +101,13 @@ incremental: true
 
 ![alt text](figures/phd-comic-vcs.gif)
 
-Click trails are ephemeral 
+Click trails are ephemeral & dangerous
 ========================================================
-- GUIs and copy-paste are bad for reproducibility 
-- A lot of manual & ad hoc data handling
+- Lots of human effort for tedious & time-wasting tasks
+- Error-prone due to manual & ad hoc data handling
 - Column and row offsets are common
-- Difficult to document -  hard to reconstruct the 'click history' for a certain analysis
-- A lot of opportunity for error, frustration & time-wasting
+- Difficult to record -  hard to reconstruct a 'click history'
+- Tiny changes in data require extensive reworking efforts
 
 ***
 
@@ -165,7 +165,7 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Wed Feb 19 1:17:15 AM 2014
+The time is Thu Feb 20 10:58:40 AM 2014
 
 Advantages and disadvantages
 ========================================================
@@ -281,7 +281,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot1.html
 nvd3
  '
 id=iframe-
-chart1a002afe4da0
+chart21d4530a53c1
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -294,7 +294,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot2.html
 nvd3
  '
 id=iframe-
-chart1a0010b21a
+chart21d430a8620e
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
