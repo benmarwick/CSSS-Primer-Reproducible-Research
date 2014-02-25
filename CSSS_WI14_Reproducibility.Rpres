@@ -241,6 +241,7 @@ In R, write code and narrative in R Markdown -> use knitr to get Markdown (with 
 `
 
 ![alt text](figures/pandoc-workflow-rmd-md.png)
+<small><small><small><small>http://kieranhealy.org/blog/archives/2014/01/23/plain-text/</small></small></small></small>
 
 Version control: Track changes for code
 ========================================================

@@ -165,7 +165,7 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Tue Feb 25 2:18:46 AM 2014
+The time is Tue Feb 25 8:36:57 AM 2014
 
 Advantages and disadvantages
 ========================================================
@@ -243,6 +243,7 @@ In R, write code and narrative in R Markdown -> use knitr to get Markdown (with 
 `
 
 ![alt text](figures/pandoc-workflow-rmd-md.png)
+<small><small><small><small>http://kieranhealy.org/blog/archives/2014/01/23/plain-text/</small></small></small></small>
 
 Version control: Track changes for code
 ========================================================
@@ -281,7 +282,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot1.html
 nvd3
  '
 id=iframe-
-chart1c8c663c7b70
+chart1240302124fd
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -294,7 +295,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot2.html
 nvd3
  '
 id=iframe-
-chart1c8c78341ee
+chart1240fb77832
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
