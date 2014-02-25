@@ -165,7 +165,7 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Thu Feb 20 10:58:40 AM 2014
+The time is Tue Feb 25 2:18:46 AM 2014
 
 Advantages and disadvantages
 ========================================================
@@ -281,7 +281,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot1.html
 nvd3
  '
 id=iframe-
-chart21d4530a53c1
+chart1c8c663c7b70
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -294,7 +294,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot2.html
 nvd3
  '
 id=iframe-
-chart21d430a8620e
+chart1c8c78341ee
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -305,6 +305,11 @@ Interactive notebook in the browser, iPython-style
 library(rCharts)
 open_notebook()
 ```
+
+RCloud, another iPython-style R notebook
+========================================================
+<img src="figures/rcloud.png" alt="alt text" width="800">
+
 
 Depositing code and data
 ========================================================
@@ -350,6 +355,7 @@ is hard (but not really our job - most licenses absolve us)
 
 Standards
 ========================================================
+- Schwab et al.: ER (Easily reproducible), CR (Conditionally reproducible), NR (Not reproducible)
 - _Biostatistics_ kite-marking of articles (Peng 2009): D (data), C (code), R (both)
 - Reproducible Research Standard (Stodden 2009), scientists should release 
  - The full compendium on the internet
