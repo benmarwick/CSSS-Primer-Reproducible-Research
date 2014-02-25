@@ -50,10 +50,10 @@ Benefits
 Limitations
 =======================================================
 Technical
-- Classified or sensitive data
-- Nondisclosure agreements
-- Intellectual property 
+- Classified/sensitive/big data
+- Nondisclosure agreements & Intellectual property 
 - Software licensing issues
+- Competition
 - Neither necessary nor sufficient for correctness (but essential for dispute resolution)
 
 ***
@@ -165,7 +165,7 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Tue Feb 25 8:36:57 AM 2014
+The time is Tue Feb 25 10:41:38 AM 2014
 
 Advantages and disadvantages
 ========================================================
@@ -282,7 +282,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot1.html
 nvd3
  '
 id=iframe-
-chart1240302124fd
+chart10f427bd7a47
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -295,7 +295,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot2.html
 nvd3
  '
 id=iframe-
-chart1240fb77832
+chart10f4736115b5
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
