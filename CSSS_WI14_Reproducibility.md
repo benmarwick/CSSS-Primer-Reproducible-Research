@@ -18,7 +18,7 @@ Definitions
 
 *Replicable* refers to the ability to produce **exactly** the same results as published. Other people get exactly the same results when doing exactly the same thing. Technical: cf. validation and verification
 
-*Reproducible* refers to the ability to create a code that independently upholds the published results using the information provided. Checking the results from the fixed digital form of data and code from the original study. Something similar happens in other people's hands. Substantive: possibly by a new implementation
+*Reproducible* refers to the ability to create a workflow that independently upholds the published results using the information provided. Checking the results from the fixed digital form of data and code from the original study. Something similar happens in other people's hands. Substantive: possibly by a new implementation
 
 ><small>"The goal of reproducible research is to tie specific instructions to data analysis and experimental data so that scholarship can be recreated, better understood and verified." <small>- Max Kuhn, CRAN Task View: Reproducible Research</small></small>
 
@@ -165,7 +165,7 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Tue Feb 25 10:41:38 AM 2014
+The time is Tue Feb 25 10:37:01 PM 2014
 
 Advantages and disadvantages
 ========================================================
@@ -227,7 +227,7 @@ knitr - descendant of Sweave
 - Data treated as 'read only'
 - Output treated as disposable
 
-Use Pandoc to generate output from RStudio in many popular formats
+Pandoc converts output from RStudio in many popular formats
 ========================================================
 `
 `
@@ -236,7 +236,7 @@ A universal document converter, open source, cross-platform
 
 Easily convert markdown file to many formats (HTML, PDF, DOCX, etc)
 
-In R, write code and narrative in R Markdown -> use knitr to get Markdown (with figures and results) -> use pandoc to get PDF/DOCX
+Write code and narrative in R Markdown -> use knitr to get Markdown (with creation of figures and computation of results) -> use pandoc to get PDF/DOCX
 
 ***
 `
@@ -282,7 +282,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot1.html
 nvd3
  '
 id=iframe-
-chart10f427bd7a47
+chart8404a943ea
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -295,7 +295,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot2.html
 nvd3
  '
 id=iframe-
-chart10f4736115b5
+chart84065cd3733
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -327,7 +327,7 @@ Costs
 ![alt text](figures/figshare.png)
 ![alt text](figures/dryad.png)
 
-A Hierarchy of Reproducibility 
+One possible hierarchy of reproducibility 
 ========================================================
 - **Good**: Use an integrated development environment (IDE). Keep your code in one place, let it do what it’s supposed to (RStudio)
 - **Better**: Use version control. Help yourself keep track of changes, fix bugs and improve project management (RStudio & Git & GitHub or BitBucket)
@@ -343,8 +343,7 @@ Ongoing problems
 - Reproducing big data/compute research is hard
 - Making sure that source code works on other people's computers
 is hard (but not really our job - most licenses absolve us)
-- Technology for data and figures URIs not yet widely available 
-- All of this is time consuming and distracts from what our culture currently values most - more publication!
+- All of this is time consuming and distracts from what our culture currently values most - more quality publications
 
 ========================================================
 <img src="figures/VictoriaStoddenIASSISTJune2010-reasons.png" alt="alt text" width="800">
