@@ -94,7 +94,6 @@ Common practice in the social sciences
 - Version control is ad hoc
 
 ========================================================
-incremental: true
 ![alt text](figures/lemon.png)
 
 ***
@@ -165,7 +164,7 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Tue Feb 25 10:37:01 PM 2014
+The time is Thu Feb 27 1:13:34 AM 2014
 
 Advantages and disadvantages
 ========================================================
@@ -197,6 +196,44 @@ Very low barrier to documentation of code with roxygen2
 ========================================================
 
 <img src="figures/roxygen2.jpg" alt="alt text" width="800">
+
+Interactive charts in the browser with the rCharts package
+========================================================
+<iframe src='
+CSSS_WI14_Reproducibility-figure/nvd3plot1.html
+' scrolling='no' seamless class='rChart 
+nvd3
+ '
+id=iframe-
+chart144045885e41
+></iframe>
+<style>iframe.rChart{ width: 100%; height: 400px;}</style>
+
+
+Interactive charts in the browser with the rCharts package
+========================================================
+<iframe src='
+CSSS_WI14_Reproducibility-figure/nvd3plot2.html
+' scrolling='no' seamless class='rChart 
+nvd3
+ '
+id=iframe-
+chart1440fbda5f
+></iframe>
+<style>iframe.rChart{ width: 100%; height: 400px;}</style>
+
+
+Interactive notebook in the browser, iPython-style
+========================================================
+```
+library(rCharts)
+open_notebook()
+```
+
+RCloud, another iPython-style R notebook
+========================================================
+<img src="figures/rcloud.png" alt="alt text" width="800">
+
 
 Need a document formatting language
 ========================================================
@@ -245,7 +282,7 @@ Write code and narrative in R Markdown -> use knitr to get Markdown (with creati
 ![alt text](figures/pandoc-workflow-rmd-md.png)
 <small><small><small><small>http://kieranhealy.org/blog/archives/2014/01/23/plain-text/</small></small></small></small>
 
-Version control: Track changes for code
+Tracking changes with version control 
 ========================================================
 Payoffs
 - Eases collaboration
@@ -273,43 +310,6 @@ RStudio 'projects' make version control & document preparation simple
 ***
 
 ![alt text](figures/rstudio.png)
-
-Interactive charts in the browser with the rCharts package
-========================================================
-<iframe src='
-CSSS_WI14_Reproducibility-figure/nvd3plot1.html
-' scrolling='no' seamless class='rChart 
-nvd3
- '
-id=iframe-
-chart8404a943ea
-></iframe>
-<style>iframe.rChart{ width: 100%; height: 400px;}</style>
-
-
-Interactive charts in the browser with the rCharts package
-========================================================
-<iframe src='
-CSSS_WI14_Reproducibility-figure/nvd3plot2.html
-' scrolling='no' seamless class='rChart 
-nvd3
- '
-id=iframe-
-chart84065cd3733
-></iframe>
-<style>iframe.rChart{ width: 100%; height: 400px;}</style>
-
-
-Interactive notebook in the browser, iPython-style
-========================================================
-```
-library(rCharts)
-open_notebook()
-```
-
-RCloud, another iPython-style R notebook
-========================================================
-<img src="figures/rcloud.png" alt="alt text" width="800">
 
 
 Depositing code and data
