@@ -2,6 +2,7 @@ Reproducible Research: A primer for the social sciences
 ========================================================
 author: Ben Marwick
 date: March 2014
+transition: none
 ---
 ext_widgets : {rCharts: libraries/nvd3}
 ---
@@ -70,7 +71,7 @@ Our work exists on a spectrum of reproducibility
 ![alt text](figures/peng-spectrum.jpg)
 <small><small>Peng 2011, Science 334(6060) pp. 1226-1227</small></small>
 
-Goal is to expose the reader to more of the research pipeline
+Goal is to expose the reader to more of the research workflow
 =======================================================
 ![alt text](figures/peng-pipeline.jpg)
 <small><small><small>http://www.stodden.net/AMP2011/slides/pengslides.pdf</small></small></small>

@@ -2,6 +2,7 @@ Reproducible Research: A primer for the social sciences
 ========================================================
 author: Ben Marwick
 date: March 2014
+transition: none
 ---
 ext_widgets : {rCharts: libraries/nvd3}
 ---
@@ -70,7 +71,7 @@ Our work exists on a spectrum of reproducibility
 ![alt text](figures/peng-spectrum.jpg)
 <small><small>Peng 2011, Science 334(6060) pp. 1226-1227</small></small>
 
-Goal is to expose the reader to more of the research pipeline
+Goal is to expose the reader to more of the research workflow
 =======================================================
 ![alt text](figures/peng-pipeline.jpg)
 <small><small><small>http://www.stodden.net/AMP2011/slides/pengslides.pdf</small></small></small>
@@ -169,7 +170,7 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Wed 12 Mar 2:26:46 AM 2014
+The time is Wed 12 Mar 9:54:16 AM 2014
 
 
 Literate programming: for and against 
@@ -214,7 +215,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot1.html
 nvd3
  '
 id=iframe-
-chart8f02bf454a1
+chart1a302e5220c
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -228,7 +229,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot2.html
 nvd3
  '
 id=iframe-
-chart8f06d416464
+chart1a304896dc3
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
