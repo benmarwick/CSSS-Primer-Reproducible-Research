@@ -170,7 +170,7 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Wed 12 Mar 11:59:28 AM 2014
+The time is Wed 12 Mar 12:11:31 PM 2014
 
 
 Literate programming: for and against 
@@ -215,7 +215,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot1.html
 nvd3
  '
 id=iframe-
-chart1c78251e5ded
+chart1f60b312880
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -229,7 +229,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot2.html
 nvd3
  '
 id=iframe-
-chart1c785dd75c34
+chart1f6038cb1110
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -261,7 +261,7 @@ based on email text formatting. Easy to write, read and publish as-is.
 ***
 The human-readable part
 
-R Markdown: 
+rmarkdown: 
 - minor extensions to allow R code display and execution
 - embed images in html files (convenient for sharing)
 - equations
@@ -350,7 +350,7 @@ Costs
 
 A hierarchy of reproducibility 
 ========================================================
-- **Good**: Use code an integrated development environment (IDE). Minimize pointing and clicking (RStudio)
+- **Good**: Use code with an integrated development environment (IDE). Minimize pointing and clicking (RStudio)
 - **Better**: Use version control. Help yourself keep track of changes, fix bugs and improve project management (RStudio & Git & GitHub or BitBucket)
 - **Best**: Use embedded narrative and code to explicitly link code, text and data, save yourself time, save reviewers time, improve your code. (RStudio & Git & GitHub or BitBucket & rmarkdown & knitr & data repository)
 
