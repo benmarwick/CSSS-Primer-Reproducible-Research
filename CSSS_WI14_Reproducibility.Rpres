@@ -288,7 +288,7 @@ A universal document converter, open source, cross-platform
 -> use knitr to get markdown (with computation of figures and tables)   
 -> use pandoc to get HTML/PDF/DOCX
 
-...with a single R function `render` 
+...with a single easy R function `render` 
 
 ***
 `

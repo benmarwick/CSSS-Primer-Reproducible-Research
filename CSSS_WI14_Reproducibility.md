@@ -170,7 +170,7 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Wed 12 Mar 12:11:31 PM 2014
+The time is Wed 12 Mar 1:16:35 PM 2014
 
 
 Literate programming: for and against 
@@ -215,7 +215,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot1.html
 nvd3
  '
 id=iframe-
-chart1f60b312880
+chart9b449bec86
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -229,7 +229,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot2.html
 nvd3
  '
 id=iframe-
-chart1f6038cb1110
+chart9b425e44b99
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -293,7 +293,7 @@ A universal document converter, open source, cross-platform
 -> use knitr to get markdown (with computation of figures and tables)   
 -> use pandoc to get HTML/PDF/DOCX
 
-...with a single R function `render` 
+...with a single easy R function `render` 
 
 ***
 `
