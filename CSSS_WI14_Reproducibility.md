@@ -10,7 +10,7 @@ ext_widgets : {rCharts: libraries/nvd3}
 Overview
 ========================================================
 - Definitions, motives, history, spectrum
-- Current practices
+- Current practices 
 - A selection of tools to improve reproducibility 
 - Challenges, standards & our role in the future of reproducible research
 
@@ -170,7 +170,7 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Wed 12 Mar 9:54:16 AM 2014
+The time is Wed 12 Mar 11:59:28 AM 2014
 
 
 Literate programming: for and against 
@@ -215,7 +215,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot1.html
 nvd3
  '
 id=iframe-
-chart1a302e5220c
+chart1c78251e5ded
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -229,7 +229,7 @@ CSSS_WI14_Reproducibility-figure/nvd3plot2.html
 nvd3
  '
 id=iframe-
-chart1a304896dc3
+chart1c785dd75c34
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 

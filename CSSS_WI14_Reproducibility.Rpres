@@ -10,7 +10,7 @@ ext_widgets : {rCharts: libraries/nvd3}
 Overview
 ========================================================
 - Definitions, motives, history, spectrum
-- Current practices
+- Current practices 
 - A selection of tools to improve reproducibility 
 - Challenges, standards & our role in the future of reproducible research
 
