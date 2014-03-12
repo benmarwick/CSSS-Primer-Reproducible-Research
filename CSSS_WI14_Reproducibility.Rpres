@@ -24,16 +24,17 @@ Definitions
 
 History of reproducible research
 =======================================================
-- Write scientiﬁc paper [1660?]
-- Publish a pidgin algorithm and describe simulation datasets [1950?]
-- Sell magtape of code and data [1970?]
-- Place idiosyncratic dataset & software at website [1991?]
-- Publish datasets and scripts at website [2000?]
-- Hosted & integrated code and data [2020?]
+- Mathematics (400 BC?)
+- Write scientiﬁc paper, Galileo, Pasteur, etc.  (1660s?)
+- Publish a pidgin algorithm and describe simulation datasets (1950s?)
+- Sell magtape of code and data (1970s?)
+- Place idiosyncratic dataset & software at website (1990s?)
+- Publish datasets and scripts at website, eg. biology, political science, genetics, statistics (2000s?)
+- Hosted integrated code and data (2020s?)
 
-<small><small>Gavish & Gonoho AAAS 2011</small></small>
+<small><small>Gavish & Gonoho AAAS 2011, Oxberry 2013</small></small>
 
-Motivations: 'Claerbout's principle'
+Motivations: Claerbout's principle
 ========================================================
 
 >"An article about computational result is advertising, not scholarship. The actual scholarship is the full software environment, code and data, that produced the result." <small><small>- Claerbout and Karrenbach, Proceedings of the 62nd Annual International Meeting of the Society of Exploration Geophysics. 1992</small></small>
@@ -42,16 +43,16 @@ Motivations: 'Claerbout's principle'
 
 Benefits are straightforward
 =======================================================
-- Verification & Reliability: Easier to find and fix bugs. The results you produce today will be the same results you will produce tomorrow.
-- Transparency: Leads increased citation count, broader impact, improved institutional memory
-- Efficiency: Reuse allows for de-duplication of effort. Payoff in the (not so) long run
-- Flexibility: When you don’t 'point-and-click' you gain many new analytic options.
+- **Verification & Reliability**: Easier to find and fix bugs. The results you produce today will be the same results you will produce tomorrow.
+- **Transparency**: Leads increased citation count, broader impact, improved institutional memory
+- **Efficiency**: Reuse allows for de-duplication of effort. Payoff in the (not so) long run
+- **Flexibility**: When you don’t 'point-and-click' you gain many new analytic options.
 
-Can the limitations be overcome?
+But the limitations are substantial
 =======================================================
 Technical
 - Classified/sensitive/big data
-- Nondisclosure agreements & Intellectual property 
+- Nondisclosure agreements & intellectual property 
 - Software licensing issues
 - Competition
 - Neither necessary nor sufficient for correctness (but essential for dispute resolution)
@@ -64,22 +65,22 @@ Cultural & personal
 - No uniform standards of reproducibility, so no established user base
 - Inertia & embarassment
 
-Where are you on the spectra of reproducibility?
+Our work exists on a spectrum of reproducibility
 =======================================================
 ![alt text](figures/peng-spectrum.jpg)
 <small><small>Peng 2011, Science 334(6060) pp. 1226-1227</small></small>
 
-Goal is to bring the reader futher into the research pipeline
+Goal is to expose the reader to more of the research pipeline
 =======================================================
 ![alt text](figures/peng-pipeline.jpg)
 <small><small><small>http://www.stodden.net/AMP2011/slides/pengslides.pdf</small></small></small>
 
-Current practices
+Current practices, or ethnographic observations of social science research workers
 ========================================================
 type: alert
 
 
-Common practice in the social sciences
+
 ========================================================
 - Enter data in Excel
 - Use Excel for data cleaning & descriptive statistics
@@ -89,13 +90,15 @@ Common practice in the social sciences
 
 ***
 
+![alt text](figures/lemon.png)
+
+
+========================================================
+- Version control is ad hoc
 - Excel handles missing data inconsistently and sometimes incorrectly 
 - Excel uses poor algorithms for many functions
 - Scripting is possible but rare 
-- Version control is ad hoc
 
-========================================================
-![alt text](figures/lemon.png)
 
 ***
 
@@ -104,10 +107,9 @@ Common practice in the social sciences
 Click trails are ephemeral & dangerous
 ========================================================
 - Lots of human effort for tedious & time-wasting tasks
-- Error-prone due to manual & ad hoc data handling
-- Column and row offsets are common
+- Error-prone due to manual & ad hoc data handling (column and row offsets are common)
 - Difficult to record -  hard to reconstruct a 'click history'
-- Tiny changes in data require extensive reworking efforts
+- Tiny changes in data or method require extensive reworking efforts
 
 ***
 
@@ -116,23 +118,25 @@ Click trails are ephemeral & dangerous
 Case study: Reinhart and Rogoff controversy
 ========================================================
 `
+ 
 `
-
-- Claimed that higher debt-to-G.D.P. ratios are associated with lower levels of G.D.P. growth
-- Identified the threshold to -ve growth at a debt-to-G.D.P. ratio of >90%
-- Substantial impact on autsterity politics 
-- Reanalysis identified no threshold and +2.2% at >90%
+![alt text](figures/reinhart_rogoff_coding_error_0.png)
 
 ***
 
-![alt text](figures/reinhart_rogoff_coding_error_0.png)
+`
+`
+- Claimed that higher debt-to-G.D.P. ratios are associated with lower levels of G.D.P. growth
+- Identified the threshold to -ve growth at a debt-to-G.D.P. ratio of >90%
+- Substantial popular impact on autsterity politics 
+
 
 Case study: Reinhart and Rogoff controversy
 ========================================================
 <img src="figures/reinhart_rogoff_econ_mag.png" alt="alt text" width="800">
 
 
-Scripted analyses endure
+Scripted analyses are superior
 ========================================================
 
 
@@ -140,11 +144,11 @@ Scripted analyses endure
 
 ***
 
-- Plain text files and UTF-8 encoding will be readable for a long time
-- Improved transparency, automation, maintanability, accessibility, standardisation, modularity, portability, efficiency, communicability of process (what more could you want?)
+- Plain text files will be readable for a long time
+- Improved transparency, automation, maintanability, accessibility, standardisation, modularity, portability, efficiency, communicability of process (what more could we want?)
 - But there's a steep learning curve 
 
-A selection of tools
+A selection of my favourite tools for reproducible research (which also seem to be widely used by others in the social sciences)
 ========================================================
 type: alert
 
@@ -157,7 +161,7 @@ Literate statistical programming
 For example...
 Let's calculate the current time in R.
 ```{r}
-time <- format(Sys.time(), "%a %b %d %X %Y")
+time <- format(Sys.time(), "%a %d %b %X %Y")
 ```
 The text and R code are interwoven in the output:
 
@@ -166,14 +170,14 @@ The time is `` `r '\x60r time\x60'` ``
 The time is `r time`
 
 
-Advantages and disadvantages
+Literate programming: for and against 
 ========================================================
-Advantages of switching to literate programming
+For
 - Text and code all in one place, in logical order
-- Data, results automatically updated to reflect external changes
+- Tables and figures automatically updated to reflect data and method changes
 - Automatic test when building document
 
-Some disadvantages
+Against
 - Text and code all in one place; can be hard to read sometimes, especially if there is a lot of code
 - Can substantially slow down the processing of documents
 (although caching can help)
@@ -181,7 +185,7 @@ Some disadvantages
 
 Need a programming language
 ========================================================
-Machine-readable
+The machine-readable part
 
 R: Free, open source, cross-platform, highly interactive, huge user community in academica and private sector
 
@@ -240,50 +244,57 @@ RCloud, another IPython-style R notebook
 
 Need a document formatting language
 ========================================================
-
+`
+ 
+`
 <img src="figures/markdown.png" alt="alt text" width="400">
 
-Markdown: lightweight, human-readable document formatting syntax
-based on email text formatting (ie. LaTeX-lite-for-non-CS-people)
+Markdown: lightweight document formatting syntax
+based on email text formatting. Easy to write, read and publish as-is.
 
 ***
+The human-readable part
 
 R Markdown: 
 - minor extensions to allow R code display and execution
 - embed images in html files (convenient for sharing)
 - equations
 
-One package to rule them all
+Dynamic documents in R
 ========================================================
-knitr - descendant of Sweave
+knitr - descendant of Sweave  
+
+Engine for dynamic report generation in R
 
 <img src="figures/knitr.png" alt="alt text" width="400">
 
 
 ***
 
-- 'dynamic documents' put narrative and code in the same file
+- Narrative and code in the same file or explicitly linked
 - When data or narrative are updated, the document is automatically updated
 - Data treated as 'read only'
 - Output treated as disposable
 
-Pandoc converts output from RStudio in many popular formats
+Pandoc converts output from rmarkdown in many popular formats
 ========================================================
 `
 `
 
 A universal document converter, open source, cross-platform
 
-Easily convert markdown file to many formats (HTML, PDF, DOCX, etc)
+-> Write code and narrative in rmarkdown   
+-> use knitr to get markdown (with computation of figures and tables)   
+-> use pandoc to get HTML/PDF/DOCX
 
-Write code and narrative in R Markdown -> use knitr to get Markdown (with creation of figures and computation of results) -> use pandoc to get PDF/DOCX
+...with a single R function `render` 
 
 ***
 `
 `
 
 ![alt text](figures/pandoc-workflow-rmd-md.png)
-<small><small>http://kieranhealy.org/blog/archives/2014/01/23/plain-text/ </small></small>
+<small><small><small>http://kieranhealy.org/blog/archives/2014/01/23/plain-text/ </small></small></small>
 
 Tracking changes with version control 
 ========================================================
@@ -333,45 +344,44 @@ Costs
 
 A hierarchy of reproducibility 
 ========================================================
-- **Good**: Use an integrated development environment (IDE). Keep your code in one place, let it do what it’s supposed to (RStudio)
+- **Good**: Use code an integrated development environment (IDE). Minimize pointing and clicking (RStudio)
 - **Better**: Use version control. Help yourself keep track of changes, fix bugs and improve project management (RStudio & Git & GitHub or BitBucket)
-- **Best**: Use embedded narrative and code to explicitly link code, text and data, save yourself time, save reviewers time, improve your code. (RStudio & Git & GitHub or BitBucket & R Markdown & knitr & data repository)
+- **Best**: Use embedded narrative and code to explicitly link code, text and data, save yourself time, save reviewers time, improve your code. (RStudio & Git & GitHub or BitBucket & rmarkdown & knitr & data repository)
 
-Problems, standards & our role in the future
+
 ========================================================
 type: alert
 
+Problems, standards & our role in the future
+---
 
-Stodden's survey
+***
+
+![alt text](figures/doge.jpg)
+
+
+
 ========================================================
 <img src="figures/VictoriaStoddenIASSISTJune2010-reasons-to.png" alt="alt text" width="800">
 <small><small>Stodden (IASSIST 2010) sampled American academics registered at the Machine Learning conference NIPS (134 responses from 593 requests (23%). Red = communitarian norms, Blue = private incentives</small></small>
 
-Stodden's survey
+
 ========================================================
 <img src="figures/VictoriaStoddenIASSISTJune2010-reasons.png" alt="alt text" width="800">
 <small><small>Stodden (IASSIST 2010) sampled American academics registered at the Machine Learning conference NIPS (134 responses from 593 requests (23%). Red = communitarian norms, Blue = private incentives</small></small>
 
 
-Ongoing problems
-========================================================
-- Keeping detailed enough records is hard
-- Reproducing big data/compute research is hard
-- Making sure that source code works on other people's computers is hard (but not really our job - most licenses absolve us)
-- Technology is a moving target
-- All of this is time consuming and distracts from what our culture currently values most - more quality publications
-
-Standards
+Standards to normalise reproducible research
 ========================================================
 - Schwab et al.: ER (Easily reproducible), CR (Conditionally reproducible), NR (Not reproducible)
 - _Biostatistics_ kite-marking of articles (Peng 2009): D (data), C (code), R (both)
-- Reproducible Research Standard (Stodden 2009), scientists should release 
+- Reproducible Research Standard (Stodden 2009): we should release 
  - The full compendium on the internet
  - Media such as text, figures, tables with Creative Commons Attribution license (CC-BY) 
  - Code with one of Apache 2.0, MIT, LGPL, BSD, etc.
  - Original "selection and arrangement" of data with CC0 or CC-BY
 
-Future of Reproducible Research is Stodden's Standard
+Culture change is the biggest challenge
 ========================================================
 - Promote culture change through positive attribution 
 - Implement mechanisms to indicate & encourage **degrees of compliance** (ie. easily identifiable logo & clear definitions for different levels of reproducibility):
@@ -381,7 +391,7 @@ Future of Reproducible Research is Stodden's Standard
  - **'Semi-Reproduced'**: independent reproduction with other data
  - **'Perpetually Reproducible'**: streaming data
  
-Our role in the future of Reproducible Research
+Our role in the future of reproducible research
 ========================================================
 incremental: true
 - Train students by putting homework, assignments & dissertations on the reproducible research spectrum
@@ -393,7 +403,10 @@ incremental: true
 
 Thanks! 
 ========================================================
->"Abandoning the habit of secrecy in favor of process transparency and peer review was the crucial step by which alchemy became chemistry." <small><small>-Raymond, E. S., 2004, The art of UNIX programming: Addison-Wesley.</small></small>
+>"Abandoning the habit of secrecy in favor of process transparency and peer review was the crucial step by which alchemy became chemistry."
+---
+<small><small>-Raymond, E. S., 2004, The art of UNIX programming: Addison-Wesley.</small></small>
+
 
 
 Colophon
@@ -415,7 +428,7 @@ Licensing:
 
 References
 ========================================================
-See Rpres file for full references
+See Rpres file on [github](https://github.com/benmarwick/CSSS-Primer-Reproducible-Research) for full references
 ```{r, echo=FALSE}
 # Buckheit, J.B. and Donoho, D.L. Wavelab and reproducible research. (1995).
 # Morin, A. et al. Shining light into black boxes. Science. 336, (2012), 159-160.
