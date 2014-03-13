@@ -10,7 +10,7 @@ ext_widgets : {rCharts: libraries/nvd3}
 Overview
 ========================================================
 - Definitions, motives, history, spectrum
-- Current practices
+- Current practices 
 - A selection of tools to improve reproducibility 
 - Challenges, standards & our role in the future of reproducible research
 
@@ -170,7 +170,11 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
+<<<<<<< HEAD
 The time is Thu 13 Mar 12:04:17 PM 2014
+=======
+The time is Wed 12 Mar 1:16:35 PM 2014
+>>>>>>> 15cd7a8c7aeec73ae40b357e6996740ae4970378
 
 
 Literate programming: for and against 
@@ -717,7 +721,11 @@ Interactive charts in the browser with the rCharts package
 nvd3
  '
 id=iframe-
+<<<<<<< HEAD
 chart197068f29c9
+=======
+chart9b449bec86
+>>>>>>> 15cd7a8c7aeec73ae40b357e6996740ae4970378
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -914,7 +922,11 @@ Interactive charts in the browser with the rCharts package
 nvd3
  '
 id=iframe-
+<<<<<<< HEAD
 chart19707ed94124
+=======
+chart9b425e44b99
+>>>>>>> 15cd7a8c7aeec73ae40b357e6996740ae4970378
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -946,7 +958,7 @@ based on email text formatting. Easy to write, read and publish as-is.
 ***
 The human-readable part
 
-R Markdown: 
+rmarkdown: 
 - minor extensions to allow R code display and execution
 - embed images in html files (convenient for sharing)
 - equations
@@ -978,7 +990,7 @@ A universal document converter, open source, cross-platform
 -> use knitr to get markdown (with computation of figures and tables)   
 -> use pandoc to get HTML/PDF/DOCX
 
-...with a single R function `render` 
+...with a single easy R function `render` 
 
 ***
 `
@@ -1035,7 +1047,7 @@ Costs
 
 A hierarchy of reproducibility 
 ========================================================
-- **Good**: Use code an integrated development environment (IDE). Minimize pointing and clicking (RStudio)
+- **Good**: Use code with an integrated development environment (IDE). Minimize pointing and clicking (RStudio)
 - **Better**: Use version control. Help yourself keep track of changes, fix bugs and improve project management (RStudio & Git & GitHub or BitBucket)
 - **Best**: Use embedded narrative and code to explicitly link code, text and data, save yourself time, save reviewers time, improve your code. (RStudio & Git & GitHub or BitBucket & rmarkdown & knitr & data repository)
 
