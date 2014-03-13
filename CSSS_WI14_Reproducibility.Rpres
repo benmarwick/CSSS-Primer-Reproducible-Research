@@ -213,8 +213,8 @@ Interactive charts in the browser with the rCharts package
 require(rCharts)
 n1 <- nPlot(mpg ~ wt, data = mtcars, type = 'scatterChart')
 n1$addParams(width = 800, height = 400)
-n1$show('iframesrc', cdn = TRUE)
-# n1$show('inline', include_assets = TRUE, cdn = TRUE)
+# n1$show('iframesrc', cdn = TRUE)
+n1$show('inline', include_assets = TRUE, cdn = TRUE)
 
 # another one
 # options(RCHART_WIDTH = 600, RCHART_HEIGHT = 400)

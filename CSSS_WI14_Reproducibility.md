@@ -170,7 +170,7 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Thu 13 Mar 12:11:18 PM 2014
+The time is Thu 13 Mar 12:35:18 PM 2014
 
 
 Literate programming: for and against 
@@ -209,469 +209,458 @@ Very low barrier to documentation of code with roxygen2
 
 Interactive charts in the browser with the rCharts package
 ========================================================
-<iframe srcdoc='
-&lt;!doctype HTML&gt;
-&lt;meta charset = &#039;utf-8&#039;&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;link rel=&#039;stylesheet&#039; href=&#039;http://nvd3.org/assets/css/nv.d3.css&#039;&gt;
-    
-    &lt;script src=&#039;http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
-    &lt;script src=&#039;http://d3js.org/d3.v3.min.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
-    &lt;script src=&#039;http://timelyportfolio.github.io/rCharts_nvd3_tests/libraries/widgets/nvd3/js/nv.d3.min-new.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
-    &lt;script src=&#039;http://nvd3.org/assets/lib/fisheye.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
-    
-    &lt;style&gt;
-    .rChart {
-      display: block;
-      margin-left: auto; 
-      margin-right: auto;
-      width: 800px;
-      height: 400px;
-    }  
-    &lt;/style&gt;
-    
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;div id=&#039;chart1b102dd01e15&#039; class=&#039;rChart nvd3&#039;&gt;&lt;/div&gt;  
-    
-    &lt;script type=&#039;text/javascript&#039;&gt;
+<link rel='stylesheet' href=http://nvd3.org/assets/css/nv.d3.css>
+<script type='text/javascript' src=http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js></script>
+<script type='text/javascript' src=http://d3js.org/d3.v3.min.js></script>
+<script type='text/javascript' src=http://timelyportfolio.github.io/rCharts_nvd3_tests/libraries/widgets/nvd3/js/nv.d3.min-new.js></script>
+<script type='text/javascript' src=http://nvd3.org/assets/lib/fisheye.js></script> 
+ <style>
+  .rChart {
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 800px;
+    height: 400px;
+  }  
+  </style>
+<div id = 'chart128c25502859' class = 'rChart nvd3'></div>
+<script type='text/javascript'>
  $(document).ready(function(){
-      drawchart1b102dd01e15()
+      drawchart128c25502859()
     });
-    function drawchart1b102dd01e15(){  
+    function drawchart128c25502859(){  
       var opts = {
- &quot;dom&quot;: &quot;chart1b102dd01e15&quot;,
-&quot;width&quot;:    800,
-&quot;height&quot;:    400,
-&quot;x&quot;: &quot;wt&quot;,
-&quot;y&quot;: &quot;mpg&quot;,
-&quot;type&quot;: &quot;scatterChart&quot;,
-&quot;id&quot;: &quot;chart1b102dd01e15&quot; 
+ "dom": "chart128c25502859",
+"width":    800,
+"height":    400,
+"x": "wt",
+"y": "mpg",
+"type": "scatterChart",
+"id": "chart128c25502859" 
 },
         data = [
  {
- &quot;mpg&quot;:             21,
-&quot;cyl&quot;:              6,
-&quot;disp&quot;:            160,
-&quot;hp&quot;:            110,
-&quot;drat&quot;:            3.9,
-&quot;wt&quot;:           2.62,
-&quot;qsec&quot;:          16.46,
-&quot;vs&quot;:              0,
-&quot;am&quot;:              1,
-&quot;gear&quot;:              4,
-&quot;carb&quot;:              4 
+ "mpg":             21,
+"cyl":              6,
+"disp":            160,
+"hp":            110,
+"drat":            3.9,
+"wt":           2.62,
+"qsec":          16.46,
+"vs":              0,
+"am":              1,
+"gear":              4,
+"carb":              4 
 },
 {
- &quot;mpg&quot;:             21,
-&quot;cyl&quot;:              6,
-&quot;disp&quot;:            160,
-&quot;hp&quot;:            110,
-&quot;drat&quot;:            3.9,
-&quot;wt&quot;:          2.875,
-&quot;qsec&quot;:          17.02,
-&quot;vs&quot;:              0,
-&quot;am&quot;:              1,
-&quot;gear&quot;:              4,
-&quot;carb&quot;:              4 
+ "mpg":             21,
+"cyl":              6,
+"disp":            160,
+"hp":            110,
+"drat":            3.9,
+"wt":          2.875,
+"qsec":          17.02,
+"vs":              0,
+"am":              1,
+"gear":              4,
+"carb":              4 
 },
 {
- &quot;mpg&quot;:           22.8,
-&quot;cyl&quot;:              4,
-&quot;disp&quot;:            108,
-&quot;hp&quot;:             93,
-&quot;drat&quot;:           3.85,
-&quot;wt&quot;:           2.32,
-&quot;qsec&quot;:          18.61,
-&quot;vs&quot;:              1,
-&quot;am&quot;:              1,
-&quot;gear&quot;:              4,
-&quot;carb&quot;:              1 
+ "mpg":           22.8,
+"cyl":              4,
+"disp":            108,
+"hp":             93,
+"drat":           3.85,
+"wt":           2.32,
+"qsec":          18.61,
+"vs":              1,
+"am":              1,
+"gear":              4,
+"carb":              1 
 },
 {
- &quot;mpg&quot;:           21.4,
-&quot;cyl&quot;:              6,
-&quot;disp&quot;:            258,
-&quot;hp&quot;:            110,
-&quot;drat&quot;:           3.08,
-&quot;wt&quot;:          3.215,
-&quot;qsec&quot;:          19.44,
-&quot;vs&quot;:              1,
-&quot;am&quot;:              0,
-&quot;gear&quot;:              3,
-&quot;carb&quot;:              1 
+ "mpg":           21.4,
+"cyl":              6,
+"disp":            258,
+"hp":            110,
+"drat":           3.08,
+"wt":          3.215,
+"qsec":          19.44,
+"vs":              1,
+"am":              0,
+"gear":              3,
+"carb":              1 
 },
 {
- &quot;mpg&quot;:           18.7,
-&quot;cyl&quot;:              8,
-&quot;disp&quot;:            360,
-&quot;hp&quot;:            175,
-&quot;drat&quot;:           3.15,
-&quot;wt&quot;:           3.44,
-&quot;qsec&quot;:          17.02,
-&quot;vs&quot;:              0,
-&quot;am&quot;:              0,
-&quot;gear&quot;:              3,
-&quot;carb&quot;:              2 
+ "mpg":           18.7,
+"cyl":              8,
+"disp":            360,
+"hp":            175,
+"drat":           3.15,
+"wt":           3.44,
+"qsec":          17.02,
+"vs":              0,
+"am":              0,
+"gear":              3,
+"carb":              2 
 },
 {
- &quot;mpg&quot;:           18.1,
-&quot;cyl&quot;:              6,
-&quot;disp&quot;:            225,
-&quot;hp&quot;:            105,
-&quot;drat&quot;:           2.76,
-&quot;wt&quot;:           3.46,
-&quot;qsec&quot;:          20.22,
-&quot;vs&quot;:              1,
-&quot;am&quot;:              0,
-&quot;gear&quot;:              3,
-&quot;carb&quot;:              1 
+ "mpg":           18.1,
+"cyl":              6,
+"disp":            225,
+"hp":            105,
+"drat":           2.76,
+"wt":           3.46,
+"qsec":          20.22,
+"vs":              1,
+"am":              0,
+"gear":              3,
+"carb":              1 
 },
 {
- &quot;mpg&quot;:           14.3,
-&quot;cyl&quot;:              8,
-&quot;disp&quot;:            360,
-&quot;hp&quot;:            245,
-&quot;drat&quot;:           3.21,
-&quot;wt&quot;:           3.57,
-&quot;qsec&quot;:          15.84,
-&quot;vs&quot;:              0,
-&quot;am&quot;:              0,
-&quot;gear&quot;:              3,
-&quot;carb&quot;:              4 
+ "mpg":           14.3,
+"cyl":              8,
+"disp":            360,
+"hp":            245,
+"drat":           3.21,
+"wt":           3.57,
+"qsec":          15.84,
+"vs":              0,
+"am":              0,
+"gear":              3,
+"carb":              4 
 },
 {
- &quot;mpg&quot;:           24.4,
-&quot;cyl&quot;:              4,
-&quot;disp&quot;:          146.7,
-&quot;hp&quot;:             62,
-&quot;drat&quot;:           3.69,
-&quot;wt&quot;:           3.19,
-&quot;qsec&quot;:             20,
-&quot;vs&quot;:              1,
-&quot;am&quot;:              0,
-&quot;gear&quot;:              4,
-&quot;carb&quot;:              2 
+ "mpg":           24.4,
+"cyl":              4,
+"disp":          146.7,
+"hp":             62,
+"drat":           3.69,
+"wt":           3.19,
+"qsec":             20,
+"vs":              1,
+"am":              0,
+"gear":              4,
+"carb":              2 
 },
 {
- &quot;mpg&quot;:           22.8,
-&quot;cyl&quot;:              4,
-&quot;disp&quot;:          140.8,
-&quot;hp&quot;:             95,
-&quot;drat&quot;:           3.92,
-&quot;wt&quot;:           3.15,
-&quot;qsec&quot;:           22.9,
-&quot;vs&quot;:              1,
-&quot;am&quot;:              0,
-&quot;gear&quot;:              4,
-&quot;carb&quot;:              2 
+ "mpg":           22.8,
+"cyl":              4,
+"disp":          140.8,
+"hp":             95,
+"drat":           3.92,
+"wt":           3.15,
+"qsec":           22.9,
+"vs":              1,
+"am":              0,
+"gear":              4,
+"carb":              2 
 },
 {
- &quot;mpg&quot;:           19.2,
-&quot;cyl&quot;:              6,
-&quot;disp&quot;:          167.6,
-&quot;hp&quot;:            123,
-&quot;drat&quot;:           3.92,
-&quot;wt&quot;:           3.44,
-&quot;qsec&quot;:           18.3,
-&quot;vs&quot;:              1,
-&quot;am&quot;:              0,
-&quot;gear&quot;:              4,
-&quot;carb&quot;:              4 
+ "mpg":           19.2,
+"cyl":              6,
+"disp":          167.6,
+"hp":            123,
+"drat":           3.92,
+"wt":           3.44,
+"qsec":           18.3,
+"vs":              1,
+"am":              0,
+"gear":              4,
+"carb":              4 
 },
 {
- &quot;mpg&quot;:           17.8,
-&quot;cyl&quot;:              6,
-&quot;disp&quot;:          167.6,
-&quot;hp&quot;:            123,
-&quot;drat&quot;:           3.92,
-&quot;wt&quot;:           3.44,
-&quot;qsec&quot;:           18.9,
-&quot;vs&quot;:              1,
-&quot;am&quot;:              0,
-&quot;gear&quot;:              4,
-&quot;carb&quot;:              4 
+ "mpg":           17.8,
+"cyl":              6,
+"disp":          167.6,
+"hp":            123,
+"drat":           3.92,
+"wt":           3.44,
+"qsec":           18.9,
+"vs":              1,
+"am":              0,
+"gear":              4,
+"carb":              4 
 },
 {
- &quot;mpg&quot;:           16.4,
-&quot;cyl&quot;:              8,
-&quot;disp&quot;:          275.8,
-&quot;hp&quot;:            180,
-&quot;drat&quot;:           3.07,
-&quot;wt&quot;:           4.07,
-&quot;qsec&quot;:           17.4,
-&quot;vs&quot;:              0,
-&quot;am&quot;:              0,
-&quot;gear&quot;:              3,
-&quot;carb&quot;:              3 
+ "mpg":           16.4,
+"cyl":              8,
+"disp":          275.8,
+"hp":            180,
+"drat":           3.07,
+"wt":           4.07,
+"qsec":           17.4,
+"vs":              0,
+"am":              0,
+"gear":              3,
+"carb":              3 
 },
 {
- &quot;mpg&quot;:           17.3,
-&quot;cyl&quot;:              8,
-&quot;disp&quot;:          275.8,
-&quot;hp&quot;:            180,
-&quot;drat&quot;:           3.07,
-&quot;wt&quot;:           3.73,
-&quot;qsec&quot;:           17.6,
-&quot;vs&quot;:              0,
-&quot;am&quot;:              0,
-&quot;gear&quot;:              3,
-&quot;carb&quot;:              3 
+ "mpg":           17.3,
+"cyl":              8,
+"disp":          275.8,
+"hp":            180,
+"drat":           3.07,
+"wt":           3.73,
+"qsec":           17.6,
+"vs":              0,
+"am":              0,
+"gear":              3,
+"carb":              3 
 },
 {
- &quot;mpg&quot;:           15.2,
-&quot;cyl&quot;:              8,
-&quot;disp&quot;:          275.8,
-&quot;hp&quot;:            180,
-&quot;drat&quot;:           3.07,
-&quot;wt&quot;:           3.78,
-&quot;qsec&quot;:             18,
-&quot;vs&quot;:              0,
-&quot;am&quot;:              0,
-&quot;gear&quot;:              3,
-&quot;carb&quot;:              3 
+ "mpg":           15.2,
+"cyl":              8,
+"disp":          275.8,
+"hp":            180,
+"drat":           3.07,
+"wt":           3.78,
+"qsec":             18,
+"vs":              0,
+"am":              0,
+"gear":              3,
+"carb":              3 
 },
 {
- &quot;mpg&quot;:           10.4,
-&quot;cyl&quot;:              8,
-&quot;disp&quot;:            472,
-&quot;hp&quot;:            205,
-&quot;drat&quot;:           2.93,
-&quot;wt&quot;:           5.25,
-&quot;qsec&quot;:          17.98,
-&quot;vs&quot;:              0,
-&quot;am&quot;:              0,
-&quot;gear&quot;:              3,
-&quot;carb&quot;:              4 
+ "mpg":           10.4,
+"cyl":              8,
+"disp":            472,
+"hp":            205,
+"drat":           2.93,
+"wt":           5.25,
+"qsec":          17.98,
+"vs":              0,
+"am":              0,
+"gear":              3,
+"carb":              4 
 },
 {
- &quot;mpg&quot;:           10.4,
-&quot;cyl&quot;:              8,
-&quot;disp&quot;:            460,
-&quot;hp&quot;:            215,
-&quot;drat&quot;:              3,
-&quot;wt&quot;:          5.424,
-&quot;qsec&quot;:          17.82,
-&quot;vs&quot;:              0,
-&quot;am&quot;:              0,
-&quot;gear&quot;:              3,
-&quot;carb&quot;:              4 
+ "mpg":           10.4,
+"cyl":              8,
+"disp":            460,
+"hp":            215,
+"drat":              3,
+"wt":          5.424,
+"qsec":          17.82,
+"vs":              0,
+"am":              0,
+"gear":              3,
+"carb":              4 
 },
 {
- &quot;mpg&quot;:           14.7,
-&quot;cyl&quot;:              8,
-&quot;disp&quot;:            440,
-&quot;hp&quot;:            230,
-&quot;drat&quot;:           3.23,
-&quot;wt&quot;:          5.345,
-&quot;qsec&quot;:          17.42,
-&quot;vs&quot;:              0,
-&quot;am&quot;:              0,
-&quot;gear&quot;:              3,
-&quot;carb&quot;:              4 
+ "mpg":           14.7,
+"cyl":              8,
+"disp":            440,
+"hp":            230,
+"drat":           3.23,
+"wt":          5.345,
+"qsec":          17.42,
+"vs":              0,
+"am":              0,
+"gear":              3,
+"carb":              4 
 },
 {
- &quot;mpg&quot;:           32.4,
-&quot;cyl&quot;:              4,
-&quot;disp&quot;:           78.7,
-&quot;hp&quot;:             66,
-&quot;drat&quot;:           4.08,
-&quot;wt&quot;:            2.2,
-&quot;qsec&quot;:          19.47,
-&quot;vs&quot;:              1,
-&quot;am&quot;:              1,
-&quot;gear&quot;:              4,
-&quot;carb&quot;:              1 
+ "mpg":           32.4,
+"cyl":              4,
+"disp":           78.7,
+"hp":             66,
+"drat":           4.08,
+"wt":            2.2,
+"qsec":          19.47,
+"vs":              1,
+"am":              1,
+"gear":              4,
+"carb":              1 
 },
 {
- &quot;mpg&quot;:           30.4,
-&quot;cyl&quot;:              4,
-&quot;disp&quot;:           75.7,
-&quot;hp&quot;:             52,
-&quot;drat&quot;:           4.93,
-&quot;wt&quot;:          1.615,
-&quot;qsec&quot;:          18.52,
-&quot;vs&quot;:              1,
-&quot;am&quot;:              1,
-&quot;gear&quot;:              4,
-&quot;carb&quot;:              2 
+ "mpg":           30.4,
+"cyl":              4,
+"disp":           75.7,
+"hp":             52,
+"drat":           4.93,
+"wt":          1.615,
+"qsec":          18.52,
+"vs":              1,
+"am":              1,
+"gear":              4,
+"carb":              2 
 },
 {
- &quot;mpg&quot;:           33.9,
-&quot;cyl&quot;:              4,
-&quot;disp&quot;:           71.1,
-&quot;hp&quot;:             65,
-&quot;drat&quot;:           4.22,
-&quot;wt&quot;:          1.835,
-&quot;qsec&quot;:           19.9,
-&quot;vs&quot;:              1,
-&quot;am&quot;:              1,
-&quot;gear&quot;:              4,
-&quot;carb&quot;:              1 
+ "mpg":           33.9,
+"cyl":              4,
+"disp":           71.1,
+"hp":             65,
+"drat":           4.22,
+"wt":          1.835,
+"qsec":           19.9,
+"vs":              1,
+"am":              1,
+"gear":              4,
+"carb":              1 
 },
 {
- &quot;mpg&quot;:           21.5,
-&quot;cyl&quot;:              4,
-&quot;disp&quot;:          120.1,
-&quot;hp&quot;:             97,
-&quot;drat&quot;:            3.7,
-&quot;wt&quot;:          2.465,
-&quot;qsec&quot;:          20.01,
-&quot;vs&quot;:              1,
-&quot;am&quot;:              0,
-&quot;gear&quot;:              3,
-&quot;carb&quot;:              1 
+ "mpg":           21.5,
+"cyl":              4,
+"disp":          120.1,
+"hp":             97,
+"drat":            3.7,
+"wt":          2.465,
+"qsec":          20.01,
+"vs":              1,
+"am":              0,
+"gear":              3,
+"carb":              1 
 },
 {
- &quot;mpg&quot;:           15.5,
-&quot;cyl&quot;:              8,
-&quot;disp&quot;:            318,
-&quot;hp&quot;:            150,
-&quot;drat&quot;:           2.76,
-&quot;wt&quot;:           3.52,
-&quot;qsec&quot;:          16.87,
-&quot;vs&quot;:              0,
-&quot;am&quot;:              0,
-&quot;gear&quot;:              3,
-&quot;carb&quot;:              2 
+ "mpg":           15.5,
+"cyl":              8,
+"disp":            318,
+"hp":            150,
+"drat":           2.76,
+"wt":           3.52,
+"qsec":          16.87,
+"vs":              0,
+"am":              0,
+"gear":              3,
+"carb":              2 
 },
 {
- &quot;mpg&quot;:           15.2,
-&quot;cyl&quot;:              8,
-&quot;disp&quot;:            304,
-&quot;hp&quot;:            150,
-&quot;drat&quot;:           3.15,
-&quot;wt&quot;:          3.435,
-&quot;qsec&quot;:           17.3,
-&quot;vs&quot;:              0,
-&quot;am&quot;:              0,
-&quot;gear&quot;:              3,
-&quot;carb&quot;:              2 
+ "mpg":           15.2,
+"cyl":              8,
+"disp":            304,
+"hp":            150,
+"drat":           3.15,
+"wt":          3.435,
+"qsec":           17.3,
+"vs":              0,
+"am":              0,
+"gear":              3,
+"carb":              2 
 },
 {
- &quot;mpg&quot;:           13.3,
-&quot;cyl&quot;:              8,
-&quot;disp&quot;:            350,
-&quot;hp&quot;:            245,
-&quot;drat&quot;:           3.73,
-&quot;wt&quot;:           3.84,
-&quot;qsec&quot;:          15.41,
-&quot;vs&quot;:              0,
-&quot;am&quot;:              0,
-&quot;gear&quot;:              3,
-&quot;carb&quot;:              4 
+ "mpg":           13.3,
+"cyl":              8,
+"disp":            350,
+"hp":            245,
+"drat":           3.73,
+"wt":           3.84,
+"qsec":          15.41,
+"vs":              0,
+"am":              0,
+"gear":              3,
+"carb":              4 
 },
 {
- &quot;mpg&quot;:           19.2,
-&quot;cyl&quot;:              8,
-&quot;disp&quot;:            400,
-&quot;hp&quot;:            175,
-&quot;drat&quot;:           3.08,
-&quot;wt&quot;:          3.845,
-&quot;qsec&quot;:          17.05,
-&quot;vs&quot;:              0,
-&quot;am&quot;:              0,
-&quot;gear&quot;:              3,
-&quot;carb&quot;:              2 
+ "mpg":           19.2,
+"cyl":              8,
+"disp":            400,
+"hp":            175,
+"drat":           3.08,
+"wt":          3.845,
+"qsec":          17.05,
+"vs":              0,
+"am":              0,
+"gear":              3,
+"carb":              2 
 },
 {
- &quot;mpg&quot;:           27.3,
-&quot;cyl&quot;:              4,
-&quot;disp&quot;:             79,
-&quot;hp&quot;:             66,
-&quot;drat&quot;:           4.08,
-&quot;wt&quot;:          1.935,
-&quot;qsec&quot;:           18.9,
-&quot;vs&quot;:              1,
-&quot;am&quot;:              1,
-&quot;gear&quot;:              4,
-&quot;carb&quot;:              1 
+ "mpg":           27.3,
+"cyl":              4,
+"disp":             79,
+"hp":             66,
+"drat":           4.08,
+"wt":          1.935,
+"qsec":           18.9,
+"vs":              1,
+"am":              1,
+"gear":              4,
+"carb":              1 
 },
 {
- &quot;mpg&quot;:             26,
-&quot;cyl&quot;:              4,
-&quot;disp&quot;:          120.3,
-&quot;hp&quot;:             91,
-&quot;drat&quot;:           4.43,
-&quot;wt&quot;:           2.14,
-&quot;qsec&quot;:           16.7,
-&quot;vs&quot;:              0,
-&quot;am&quot;:              1,
-&quot;gear&quot;:              5,
-&quot;carb&quot;:              2 
+ "mpg":             26,
+"cyl":              4,
+"disp":          120.3,
+"hp":             91,
+"drat":           4.43,
+"wt":           2.14,
+"qsec":           16.7,
+"vs":              0,
+"am":              1,
+"gear":              5,
+"carb":              2 
 },
 {
- &quot;mpg&quot;:           30.4,
-&quot;cyl&quot;:              4,
-&quot;disp&quot;:           95.1,
-&quot;hp&quot;:            113,
-&quot;drat&quot;:           3.77,
-&quot;wt&quot;:          1.513,
-&quot;qsec&quot;:           16.9,
-&quot;vs&quot;:              1,
-&quot;am&quot;:              1,
-&quot;gear&quot;:              5,
-&quot;carb&quot;:              2 
+ "mpg":           30.4,
+"cyl":              4,
+"disp":           95.1,
+"hp":            113,
+"drat":           3.77,
+"wt":          1.513,
+"qsec":           16.9,
+"vs":              1,
+"am":              1,
+"gear":              5,
+"carb":              2 
 },
 {
- &quot;mpg&quot;:           15.8,
-&quot;cyl&quot;:              8,
-&quot;disp&quot;:            351,
-&quot;hp&quot;:            264,
-&quot;drat&quot;:           4.22,
-&quot;wt&quot;:           3.17,
-&quot;qsec&quot;:           14.5,
-&quot;vs&quot;:              0,
-&quot;am&quot;:              1,
-&quot;gear&quot;:              5,
-&quot;carb&quot;:              4 
+ "mpg":           15.8,
+"cyl":              8,
+"disp":            351,
+"hp":            264,
+"drat":           4.22,
+"wt":           3.17,
+"qsec":           14.5,
+"vs":              0,
+"am":              1,
+"gear":              5,
+"carb":              4 
 },
 {
- &quot;mpg&quot;:           19.7,
-&quot;cyl&quot;:              6,
-&quot;disp&quot;:            145,
-&quot;hp&quot;:            175,
-&quot;drat&quot;:           3.62,
-&quot;wt&quot;:           2.77,
-&quot;qsec&quot;:           15.5,
-&quot;vs&quot;:              0,
-&quot;am&quot;:              1,
-&quot;gear&quot;:              5,
-&quot;carb&quot;:              6 
+ "mpg":           19.7,
+"cyl":              6,
+"disp":            145,
+"hp":            175,
+"drat":           3.62,
+"wt":           2.77,
+"qsec":           15.5,
+"vs":              0,
+"am":              1,
+"gear":              5,
+"carb":              6 
 },
 {
- &quot;mpg&quot;:             15,
-&quot;cyl&quot;:              8,
-&quot;disp&quot;:            301,
-&quot;hp&quot;:            335,
-&quot;drat&quot;:           3.54,
-&quot;wt&quot;:           3.57,
-&quot;qsec&quot;:           14.6,
-&quot;vs&quot;:              0,
-&quot;am&quot;:              1,
-&quot;gear&quot;:              5,
-&quot;carb&quot;:              8 
+ "mpg":             15,
+"cyl":              8,
+"disp":            301,
+"hp":            335,
+"drat":           3.54,
+"wt":           3.57,
+"qsec":           14.6,
+"vs":              0,
+"am":              1,
+"gear":              5,
+"carb":              8 
 },
 {
- &quot;mpg&quot;:           21.4,
-&quot;cyl&quot;:              4,
-&quot;disp&quot;:            121,
-&quot;hp&quot;:            109,
-&quot;drat&quot;:           4.11,
-&quot;wt&quot;:           2.78,
-&quot;qsec&quot;:           18.6,
-&quot;vs&quot;:              1,
-&quot;am&quot;:              1,
-&quot;gear&quot;:              4,
-&quot;carb&quot;:              2 
+ "mpg":           21.4,
+"cyl":              4,
+"disp":            121,
+"hp":            109,
+"drat":           4.11,
+"wt":           2.78,
+"qsec":           18.6,
+"vs":              1,
+"am":              1,
+"gear":              4,
+"carb":              2 
 } 
 ]
   
-      if(!(opts.type===&quot;pieChart&quot; || opts.type===&quot;sparklinePlus&quot;)) {
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus")) {
         var data = d3.nest()
           .key(function(d){
-            //return opts.group === undefined ? &#039;main&#039; : d[opts.group]
+            //return opts.group === undefined ? 'main' : d[opts.group]
             //instead of main would think a better default is opts.x
             return opts.group === undefined ? opts.y : d[opts.group];
           })
@@ -699,8 +688,8 @@ Interactive charts in the browser with the rCharts package
         
         
       
-       d3.select(&quot;#&quot; + opts.id)
-        .append(&#039;svg&#039;)
+       d3.select("#" + opts.id)
+        .append('svg')
         .datum(data)
         .transition().duration(500)
         .call(chart);
@@ -709,17 +698,7 @@ Interactive charts in the browser with the rCharts package
        return chart;
       });
     };
-&lt;/script&gt;
-    
-  &lt;/body&gt;
-&lt;/html&gt;
-' scrolling='no' seamless class='rChart 
-nvd3
- '
-id=iframe-
-chart1b102dd01e15
-></iframe>
-<style>iframe.rChart{ width: 100%; height: 400px;}</style>
+</script>
 
 
 Interactive charts in the browser with the rCharts package
@@ -749,22 +728,22 @@ Interactive charts in the browser with the rCharts package
     
   &lt;/head&gt;
   &lt;body&gt;
-    &lt;div id=&#039;chart1b107beba35&#039; class=&#039;rChart nvd3&#039;&gt;&lt;/div&gt;  
+    &lt;div id=&#039;chart128c83e2d80&#039; class=&#039;rChart nvd3&#039;&gt;&lt;/div&gt;  
     
     &lt;script type=&#039;text/javascript&#039;&gt;
  $(document).ready(function(){
-      drawchart1b107beba35()
+      drawchart128c83e2d80()
     });
-    function drawchart1b107beba35(){  
+    function drawchart128c83e2d80(){  
       var opts = {
- &quot;dom&quot;: &quot;chart1b107beba35&quot;,
+ &quot;dom&quot;: &quot;chart128c83e2d80&quot;,
 &quot;width&quot;:    800,
 &quot;height&quot;:    400,
 &quot;x&quot;: &quot;Hair&quot;,
 &quot;y&quot;: &quot;Freq&quot;,
 &quot;group&quot;: &quot;Eye&quot;,
 &quot;type&quot;: &quot;multiBarChart&quot;,
-&quot;id&quot;: &quot;chart1b107beba35&quot; 
+&quot;id&quot;: &quot;chart128c83e2d80&quot; 
 },
         data = [
  {
@@ -914,7 +893,7 @@ Interactive charts in the browser with the rCharts package
 nvd3
  '
 id=iframe-
-chart1b107beba35
+chart128c83e2d80
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
