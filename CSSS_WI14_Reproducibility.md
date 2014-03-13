@@ -170,7 +170,7 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Wed 12 Mar 9:54:16 AM 2014
+The time is Thu 13 Mar 12:04:17 PM 2014
 
 
 Literate programming: for and against 
@@ -209,27 +209,712 @@ Very low barrier to documentation of code with roxygen2
 
 Interactive charts in the browser with the rCharts package
 ========================================================
-<iframe src='
-CSSS_WI14_Reproducibility-figure/nvd3plot1.html
+<iframe srcdoc='
+&lt;!doctype HTML&gt;
+&lt;meta charset = &#039;utf-8&#039;&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel=&#039;stylesheet&#039; href=&#039;http://nvd3.org/assets/css/nv.d3.css&#039;&gt;
+    
+    &lt;script src=&#039;http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;http://d3js.org/d3.v3.min.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;http://timelyportfolio.github.io/rCharts_nvd3_tests/libraries/widgets/nvd3/js/nv.d3.min-new.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;http://nvd3.org/assets/lib/fisheye.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    
+    &lt;style&gt;
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&#039;chart197068f29c9&#039; class=&#039;rChart nvd3&#039;&gt;&lt;/div&gt;  
+    
+    &lt;script type=&#039;text/javascript&#039;&gt;
+ $(document).ready(function(){
+      drawchart197068f29c9()
+    });
+    function drawchart197068f29c9(){  
+      var opts = {
+ &quot;dom&quot;: &quot;chart197068f29c9&quot;,
+&quot;width&quot;:    800,
+&quot;height&quot;:    400,
+&quot;x&quot;: &quot;wt&quot;,
+&quot;y&quot;: &quot;mpg&quot;,
+&quot;type&quot;: &quot;scatterChart&quot;,
+&quot;id&quot;: &quot;chart197068f29c9&quot; 
+},
+        data = [
+ {
+ &quot;mpg&quot;:             21,
+&quot;cyl&quot;:              6,
+&quot;disp&quot;:            160,
+&quot;hp&quot;:            110,
+&quot;drat&quot;:            3.9,
+&quot;wt&quot;:           2.62,
+&quot;qsec&quot;:          16.46,
+&quot;vs&quot;:              0,
+&quot;am&quot;:              1,
+&quot;gear&quot;:              4,
+&quot;carb&quot;:              4 
+},
+{
+ &quot;mpg&quot;:             21,
+&quot;cyl&quot;:              6,
+&quot;disp&quot;:            160,
+&quot;hp&quot;:            110,
+&quot;drat&quot;:            3.9,
+&quot;wt&quot;:          2.875,
+&quot;qsec&quot;:          17.02,
+&quot;vs&quot;:              0,
+&quot;am&quot;:              1,
+&quot;gear&quot;:              4,
+&quot;carb&quot;:              4 
+},
+{
+ &quot;mpg&quot;:           22.8,
+&quot;cyl&quot;:              4,
+&quot;disp&quot;:            108,
+&quot;hp&quot;:             93,
+&quot;drat&quot;:           3.85,
+&quot;wt&quot;:           2.32,
+&quot;qsec&quot;:          18.61,
+&quot;vs&quot;:              1,
+&quot;am&quot;:              1,
+&quot;gear&quot;:              4,
+&quot;carb&quot;:              1 
+},
+{
+ &quot;mpg&quot;:           21.4,
+&quot;cyl&quot;:              6,
+&quot;disp&quot;:            258,
+&quot;hp&quot;:            110,
+&quot;drat&quot;:           3.08,
+&quot;wt&quot;:          3.215,
+&quot;qsec&quot;:          19.44,
+&quot;vs&quot;:              1,
+&quot;am&quot;:              0,
+&quot;gear&quot;:              3,
+&quot;carb&quot;:              1 
+},
+{
+ &quot;mpg&quot;:           18.7,
+&quot;cyl&quot;:              8,
+&quot;disp&quot;:            360,
+&quot;hp&quot;:            175,
+&quot;drat&quot;:           3.15,
+&quot;wt&quot;:           3.44,
+&quot;qsec&quot;:          17.02,
+&quot;vs&quot;:              0,
+&quot;am&quot;:              0,
+&quot;gear&quot;:              3,
+&quot;carb&quot;:              2 
+},
+{
+ &quot;mpg&quot;:           18.1,
+&quot;cyl&quot;:              6,
+&quot;disp&quot;:            225,
+&quot;hp&quot;:            105,
+&quot;drat&quot;:           2.76,
+&quot;wt&quot;:           3.46,
+&quot;qsec&quot;:          20.22,
+&quot;vs&quot;:              1,
+&quot;am&quot;:              0,
+&quot;gear&quot;:              3,
+&quot;carb&quot;:              1 
+},
+{
+ &quot;mpg&quot;:           14.3,
+&quot;cyl&quot;:              8,
+&quot;disp&quot;:            360,
+&quot;hp&quot;:            245,
+&quot;drat&quot;:           3.21,
+&quot;wt&quot;:           3.57,
+&quot;qsec&quot;:          15.84,
+&quot;vs&quot;:              0,
+&quot;am&quot;:              0,
+&quot;gear&quot;:              3,
+&quot;carb&quot;:              4 
+},
+{
+ &quot;mpg&quot;:           24.4,
+&quot;cyl&quot;:              4,
+&quot;disp&quot;:          146.7,
+&quot;hp&quot;:             62,
+&quot;drat&quot;:           3.69,
+&quot;wt&quot;:           3.19,
+&quot;qsec&quot;:             20,
+&quot;vs&quot;:              1,
+&quot;am&quot;:              0,
+&quot;gear&quot;:              4,
+&quot;carb&quot;:              2 
+},
+{
+ &quot;mpg&quot;:           22.8,
+&quot;cyl&quot;:              4,
+&quot;disp&quot;:          140.8,
+&quot;hp&quot;:             95,
+&quot;drat&quot;:           3.92,
+&quot;wt&quot;:           3.15,
+&quot;qsec&quot;:           22.9,
+&quot;vs&quot;:              1,
+&quot;am&quot;:              0,
+&quot;gear&quot;:              4,
+&quot;carb&quot;:              2 
+},
+{
+ &quot;mpg&quot;:           19.2,
+&quot;cyl&quot;:              6,
+&quot;disp&quot;:          167.6,
+&quot;hp&quot;:            123,
+&quot;drat&quot;:           3.92,
+&quot;wt&quot;:           3.44,
+&quot;qsec&quot;:           18.3,
+&quot;vs&quot;:              1,
+&quot;am&quot;:              0,
+&quot;gear&quot;:              4,
+&quot;carb&quot;:              4 
+},
+{
+ &quot;mpg&quot;:           17.8,
+&quot;cyl&quot;:              6,
+&quot;disp&quot;:          167.6,
+&quot;hp&quot;:            123,
+&quot;drat&quot;:           3.92,
+&quot;wt&quot;:           3.44,
+&quot;qsec&quot;:           18.9,
+&quot;vs&quot;:              1,
+&quot;am&quot;:              0,
+&quot;gear&quot;:              4,
+&quot;carb&quot;:              4 
+},
+{
+ &quot;mpg&quot;:           16.4,
+&quot;cyl&quot;:              8,
+&quot;disp&quot;:          275.8,
+&quot;hp&quot;:            180,
+&quot;drat&quot;:           3.07,
+&quot;wt&quot;:           4.07,
+&quot;qsec&quot;:           17.4,
+&quot;vs&quot;:              0,
+&quot;am&quot;:              0,
+&quot;gear&quot;:              3,
+&quot;carb&quot;:              3 
+},
+{
+ &quot;mpg&quot;:           17.3,
+&quot;cyl&quot;:              8,
+&quot;disp&quot;:          275.8,
+&quot;hp&quot;:            180,
+&quot;drat&quot;:           3.07,
+&quot;wt&quot;:           3.73,
+&quot;qsec&quot;:           17.6,
+&quot;vs&quot;:              0,
+&quot;am&quot;:              0,
+&quot;gear&quot;:              3,
+&quot;carb&quot;:              3 
+},
+{
+ &quot;mpg&quot;:           15.2,
+&quot;cyl&quot;:              8,
+&quot;disp&quot;:          275.8,
+&quot;hp&quot;:            180,
+&quot;drat&quot;:           3.07,
+&quot;wt&quot;:           3.78,
+&quot;qsec&quot;:             18,
+&quot;vs&quot;:              0,
+&quot;am&quot;:              0,
+&quot;gear&quot;:              3,
+&quot;carb&quot;:              3 
+},
+{
+ &quot;mpg&quot;:           10.4,
+&quot;cyl&quot;:              8,
+&quot;disp&quot;:            472,
+&quot;hp&quot;:            205,
+&quot;drat&quot;:           2.93,
+&quot;wt&quot;:           5.25,
+&quot;qsec&quot;:          17.98,
+&quot;vs&quot;:              0,
+&quot;am&quot;:              0,
+&quot;gear&quot;:              3,
+&quot;carb&quot;:              4 
+},
+{
+ &quot;mpg&quot;:           10.4,
+&quot;cyl&quot;:              8,
+&quot;disp&quot;:            460,
+&quot;hp&quot;:            215,
+&quot;drat&quot;:              3,
+&quot;wt&quot;:          5.424,
+&quot;qsec&quot;:          17.82,
+&quot;vs&quot;:              0,
+&quot;am&quot;:              0,
+&quot;gear&quot;:              3,
+&quot;carb&quot;:              4 
+},
+{
+ &quot;mpg&quot;:           14.7,
+&quot;cyl&quot;:              8,
+&quot;disp&quot;:            440,
+&quot;hp&quot;:            230,
+&quot;drat&quot;:           3.23,
+&quot;wt&quot;:          5.345,
+&quot;qsec&quot;:          17.42,
+&quot;vs&quot;:              0,
+&quot;am&quot;:              0,
+&quot;gear&quot;:              3,
+&quot;carb&quot;:              4 
+},
+{
+ &quot;mpg&quot;:           32.4,
+&quot;cyl&quot;:              4,
+&quot;disp&quot;:           78.7,
+&quot;hp&quot;:             66,
+&quot;drat&quot;:           4.08,
+&quot;wt&quot;:            2.2,
+&quot;qsec&quot;:          19.47,
+&quot;vs&quot;:              1,
+&quot;am&quot;:              1,
+&quot;gear&quot;:              4,
+&quot;carb&quot;:              1 
+},
+{
+ &quot;mpg&quot;:           30.4,
+&quot;cyl&quot;:              4,
+&quot;disp&quot;:           75.7,
+&quot;hp&quot;:             52,
+&quot;drat&quot;:           4.93,
+&quot;wt&quot;:          1.615,
+&quot;qsec&quot;:          18.52,
+&quot;vs&quot;:              1,
+&quot;am&quot;:              1,
+&quot;gear&quot;:              4,
+&quot;carb&quot;:              2 
+},
+{
+ &quot;mpg&quot;:           33.9,
+&quot;cyl&quot;:              4,
+&quot;disp&quot;:           71.1,
+&quot;hp&quot;:             65,
+&quot;drat&quot;:           4.22,
+&quot;wt&quot;:          1.835,
+&quot;qsec&quot;:           19.9,
+&quot;vs&quot;:              1,
+&quot;am&quot;:              1,
+&quot;gear&quot;:              4,
+&quot;carb&quot;:              1 
+},
+{
+ &quot;mpg&quot;:           21.5,
+&quot;cyl&quot;:              4,
+&quot;disp&quot;:          120.1,
+&quot;hp&quot;:             97,
+&quot;drat&quot;:            3.7,
+&quot;wt&quot;:          2.465,
+&quot;qsec&quot;:          20.01,
+&quot;vs&quot;:              1,
+&quot;am&quot;:              0,
+&quot;gear&quot;:              3,
+&quot;carb&quot;:              1 
+},
+{
+ &quot;mpg&quot;:           15.5,
+&quot;cyl&quot;:              8,
+&quot;disp&quot;:            318,
+&quot;hp&quot;:            150,
+&quot;drat&quot;:           2.76,
+&quot;wt&quot;:           3.52,
+&quot;qsec&quot;:          16.87,
+&quot;vs&quot;:              0,
+&quot;am&quot;:              0,
+&quot;gear&quot;:              3,
+&quot;carb&quot;:              2 
+},
+{
+ &quot;mpg&quot;:           15.2,
+&quot;cyl&quot;:              8,
+&quot;disp&quot;:            304,
+&quot;hp&quot;:            150,
+&quot;drat&quot;:           3.15,
+&quot;wt&quot;:          3.435,
+&quot;qsec&quot;:           17.3,
+&quot;vs&quot;:              0,
+&quot;am&quot;:              0,
+&quot;gear&quot;:              3,
+&quot;carb&quot;:              2 
+},
+{
+ &quot;mpg&quot;:           13.3,
+&quot;cyl&quot;:              8,
+&quot;disp&quot;:            350,
+&quot;hp&quot;:            245,
+&quot;drat&quot;:           3.73,
+&quot;wt&quot;:           3.84,
+&quot;qsec&quot;:          15.41,
+&quot;vs&quot;:              0,
+&quot;am&quot;:              0,
+&quot;gear&quot;:              3,
+&quot;carb&quot;:              4 
+},
+{
+ &quot;mpg&quot;:           19.2,
+&quot;cyl&quot;:              8,
+&quot;disp&quot;:            400,
+&quot;hp&quot;:            175,
+&quot;drat&quot;:           3.08,
+&quot;wt&quot;:          3.845,
+&quot;qsec&quot;:          17.05,
+&quot;vs&quot;:              0,
+&quot;am&quot;:              0,
+&quot;gear&quot;:              3,
+&quot;carb&quot;:              2 
+},
+{
+ &quot;mpg&quot;:           27.3,
+&quot;cyl&quot;:              4,
+&quot;disp&quot;:             79,
+&quot;hp&quot;:             66,
+&quot;drat&quot;:           4.08,
+&quot;wt&quot;:          1.935,
+&quot;qsec&quot;:           18.9,
+&quot;vs&quot;:              1,
+&quot;am&quot;:              1,
+&quot;gear&quot;:              4,
+&quot;carb&quot;:              1 
+},
+{
+ &quot;mpg&quot;:             26,
+&quot;cyl&quot;:              4,
+&quot;disp&quot;:          120.3,
+&quot;hp&quot;:             91,
+&quot;drat&quot;:           4.43,
+&quot;wt&quot;:           2.14,
+&quot;qsec&quot;:           16.7,
+&quot;vs&quot;:              0,
+&quot;am&quot;:              1,
+&quot;gear&quot;:              5,
+&quot;carb&quot;:              2 
+},
+{
+ &quot;mpg&quot;:           30.4,
+&quot;cyl&quot;:              4,
+&quot;disp&quot;:           95.1,
+&quot;hp&quot;:            113,
+&quot;drat&quot;:           3.77,
+&quot;wt&quot;:          1.513,
+&quot;qsec&quot;:           16.9,
+&quot;vs&quot;:              1,
+&quot;am&quot;:              1,
+&quot;gear&quot;:              5,
+&quot;carb&quot;:              2 
+},
+{
+ &quot;mpg&quot;:           15.8,
+&quot;cyl&quot;:              8,
+&quot;disp&quot;:            351,
+&quot;hp&quot;:            264,
+&quot;drat&quot;:           4.22,
+&quot;wt&quot;:           3.17,
+&quot;qsec&quot;:           14.5,
+&quot;vs&quot;:              0,
+&quot;am&quot;:              1,
+&quot;gear&quot;:              5,
+&quot;carb&quot;:              4 
+},
+{
+ &quot;mpg&quot;:           19.7,
+&quot;cyl&quot;:              6,
+&quot;disp&quot;:            145,
+&quot;hp&quot;:            175,
+&quot;drat&quot;:           3.62,
+&quot;wt&quot;:           2.77,
+&quot;qsec&quot;:           15.5,
+&quot;vs&quot;:              0,
+&quot;am&quot;:              1,
+&quot;gear&quot;:              5,
+&quot;carb&quot;:              6 
+},
+{
+ &quot;mpg&quot;:             15,
+&quot;cyl&quot;:              8,
+&quot;disp&quot;:            301,
+&quot;hp&quot;:            335,
+&quot;drat&quot;:           3.54,
+&quot;wt&quot;:           3.57,
+&quot;qsec&quot;:           14.6,
+&quot;vs&quot;:              0,
+&quot;am&quot;:              1,
+&quot;gear&quot;:              5,
+&quot;carb&quot;:              8 
+},
+{
+ &quot;mpg&quot;:           21.4,
+&quot;cyl&quot;:              4,
+&quot;disp&quot;:            121,
+&quot;hp&quot;:            109,
+&quot;drat&quot;:           4.11,
+&quot;wt&quot;:           2.78,
+&quot;qsec&quot;:           18.6,
+&quot;vs&quot;:              1,
+&quot;am&quot;:              1,
+&quot;gear&quot;:              4,
+&quot;carb&quot;:              2 
+} 
+]
+  
+      if(!(opts.type===&quot;pieChart&quot; || opts.type===&quot;sparklinePlus&quot;)) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? &#039;main&#039; : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .x(function(d) { return d[opts.x] })
+          .y(function(d) { return d[opts.y] })
+          .width(opts.width)
+          .height(opts.height)
+         
+        
+          
+        
+
+        
+        
+        
+      
+       d3.select(&quot;#&quot; + opts.id)
+        .append(&#039;svg&#039;)
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+&lt;/script&gt;
+    
+  &lt;/body&gt;
+&lt;/html&gt;
 ' scrolling='no' seamless class='rChart 
 nvd3
  '
 id=iframe-
-chart1a302e5220c
+chart197068f29c9
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 
-
 Interactive charts in the browser with the rCharts package
 ========================================================
-<iframe src='
-CSSS_WI14_Reproducibility-figure/nvd3plot2.html
+
+<iframe srcdoc='
+&lt;!doctype HTML&gt;
+&lt;meta charset = &#039;utf-8&#039;&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel=&#039;stylesheet&#039; href=&#039;http://nvd3.org/assets/css/nv.d3.css&#039;&gt;
+    
+    &lt;script src=&#039;http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;http://d3js.org/d3.v3.min.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;http://timelyportfolio.github.io/rCharts_nvd3_tests/libraries/widgets/nvd3/js/nv.d3.min-new.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;http://nvd3.org/assets/lib/fisheye.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    
+    &lt;style&gt;
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&#039;chart19707ed94124&#039; class=&#039;rChart nvd3&#039;&gt;&lt;/div&gt;  
+    
+    &lt;script type=&#039;text/javascript&#039;&gt;
+ $(document).ready(function(){
+      drawchart19707ed94124()
+    });
+    function drawchart19707ed94124(){  
+      var opts = {
+ &quot;dom&quot;: &quot;chart19707ed94124&quot;,
+&quot;width&quot;:    800,
+&quot;height&quot;:    400,
+&quot;x&quot;: &quot;Hair&quot;,
+&quot;y&quot;: &quot;Freq&quot;,
+&quot;group&quot;: &quot;Eye&quot;,
+&quot;type&quot;: &quot;multiBarChart&quot;,
+&quot;id&quot;: &quot;chart19707ed94124&quot; 
+},
+        data = [
+ {
+ &quot;Hair&quot;: &quot;Black&quot;,
+&quot;Eye&quot;: &quot;Brown&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:             32 
+},
+{
+ &quot;Hair&quot;: &quot;Brown&quot;,
+&quot;Eye&quot;: &quot;Brown&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:             53 
+},
+{
+ &quot;Hair&quot;: &quot;Red&quot;,
+&quot;Eye&quot;: &quot;Brown&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:             10 
+},
+{
+ &quot;Hair&quot;: &quot;Blond&quot;,
+&quot;Eye&quot;: &quot;Brown&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:              3 
+},
+{
+ &quot;Hair&quot;: &quot;Black&quot;,
+&quot;Eye&quot;: &quot;Blue&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:             11 
+},
+{
+ &quot;Hair&quot;: &quot;Brown&quot;,
+&quot;Eye&quot;: &quot;Blue&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:             50 
+},
+{
+ &quot;Hair&quot;: &quot;Red&quot;,
+&quot;Eye&quot;: &quot;Blue&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:             10 
+},
+{
+ &quot;Hair&quot;: &quot;Blond&quot;,
+&quot;Eye&quot;: &quot;Blue&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:             30 
+},
+{
+ &quot;Hair&quot;: &quot;Black&quot;,
+&quot;Eye&quot;: &quot;Hazel&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:             10 
+},
+{
+ &quot;Hair&quot;: &quot;Brown&quot;,
+&quot;Eye&quot;: &quot;Hazel&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:             25 
+},
+{
+ &quot;Hair&quot;: &quot;Red&quot;,
+&quot;Eye&quot;: &quot;Hazel&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:              7 
+},
+{
+ &quot;Hair&quot;: &quot;Blond&quot;,
+&quot;Eye&quot;: &quot;Hazel&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:              5 
+},
+{
+ &quot;Hair&quot;: &quot;Black&quot;,
+&quot;Eye&quot;: &quot;Green&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:              3 
+},
+{
+ &quot;Hair&quot;: &quot;Brown&quot;,
+&quot;Eye&quot;: &quot;Green&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:             15 
+},
+{
+ &quot;Hair&quot;: &quot;Red&quot;,
+&quot;Eye&quot;: &quot;Green&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:              7 
+},
+{
+ &quot;Hair&quot;: &quot;Blond&quot;,
+&quot;Eye&quot;: &quot;Green&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:              8 
+} 
+]
+  
+      if(!(opts.type===&quot;pieChart&quot; || opts.type===&quot;sparklinePlus&quot;)) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? &#039;main&#039; : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .x(function(d) { return d[opts.x] })
+          .y(function(d) { return d[opts.y] })
+          .width(opts.width)
+          .height(opts.height)
+         
+        
+          
+        
+
+        
+        
+        
+      
+       d3.select(&quot;#&quot; + opts.id)
+        .append(&#039;svg&#039;)
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+&lt;/script&gt;
+    
+  &lt;/body&gt;
+&lt;/html&gt;
 ' scrolling='no' seamless class='rChart 
 nvd3
  '
 id=iframe-
-chart1a304896dc3
+chart19707ed94124
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -434,7 +1119,7 @@ Licensing:
 
 References
 ========================================================
-See Rpres file on [github](https://github.com/benmarwick/CSSS-Primer-Reproducible-Research) for full references
+See Rpres file on [github](https://github.com/benmarwick/CSSS-Primer-Reproducible-Research) for full references and sources
 
 
 

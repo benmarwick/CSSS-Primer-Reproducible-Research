@@ -213,20 +213,29 @@ Interactive charts in the browser with the rCharts package
 require(rCharts)
 n1 <- nPlot(mpg ~ wt, data = mtcars, type = 'scatterChart')
 n1$addParams(width = 800, height = 400)
-n1
-```
+n1$show('iframesrc', cdn = TRUE)
+# n1$show('inline', include_assets = TRUE, cdn = TRUE)
 
+# another one
+# options(RCHART_WIDTH = 600, RCHART_HEIGHT = 400)
+# library(rCharts)
+# h1 <- hPlot(mpg ~ wt, data = mtcars, 
+#             type = "scatter")
+# # h1$show('iframesrc', cdn = TRUE)
+# h1$show('inline', include_assets = TRUE, cdn = TRUE)
+```
 
 Interactive charts in the browser with the rCharts package
 ========================================================
+
 ```{r nvd3plot2, results = 'asis', comment = NA, message = F, echo = F} 
-# this only works when the presentation is saved as HTML
-# and when the cache folder is available
 require(rCharts)
+# options(RCHART_WIDTH = 600, RCHART_HEIGHT = 400)
 hair_eye_male <- subset(as.data.frame(HairEyeColor), Sex == "Male")
 n2 <- nPlot(Freq ~ Hair, group = "Eye", data = hair_eye_male, type = "multiBarChart")
-n2$addParams(width = 800, height = 400)
-n2
+n2$show('iframesrc', cdn = TRUE)
+# n2$show('inline', include_assets = TRUE, cdn = TRUE)
+
 ```
 
 
@@ -429,8 +438,10 @@ Licensing:
 
 References
 ========================================================
-See Rpres file on [github](https://github.com/benmarwick/CSSS-Primer-Reproducible-Research) for full references
+See Rpres file on [github](https://github.com/benmarwick/CSSS-Primer-Reproducible-Research) for full references and sources
 ```{r, echo=FALSE}
+## Scholarly literature sources for this presentation
+
 # Buckheit, J.B. and Donoho, D.L. Wavelab and reproducible research. (1995).
 # Morin, A. et al. Shining light into black boxes. Science. 336, (2012), 159-160.
 # King, G. Replication, Replication. PS: Political Science and Politics. (1995).
@@ -444,7 +455,6 @@ See Rpres file on [github](https://github.com/benmarwick/CSSS-Primer-Reproducibl
 # V. Stodden, “Trust Your Science? Open Your Data and Code,” Amstat News, 1 July 2011; http://magazine.amstat.org/blog/2011/07/01/trust-your-science/
 # Stodden V, Guo P, Ma Z (2013) Toward Reproducible Computational Research: An Empirical Analysis of Data and Code Policy Adoption by Journals. PLoS ONE 8(6): e67111. doi:10.1371/journal.pone.0067111
 # Stodden V  2010 The Scientific Method in Practice: Reproducibility in the Computational Sciences. MIT Sloan School Working Paper 4773-10. http://ssrn.com/abstract=1550193
-
 # Merali, Z. Error: Why scientic programming does not compute. Nature. (2010), 6-8.
 # Barnes, N. Publish your computer code: it is good enough. Nature. 467, (2010), 753.
 # LeVeque, R.J. Python tools for reproducible research on hyperbolic problems. Computing in Science & Engineering. (2009),
@@ -472,24 +482,75 @@ See Rpres file on [github](https://github.com/benmarwick/CSSS-Primer-Reproducibl
 # Leisch F, Eugster M and Hothorn T 2011. Executable Papers for the R Community: The R2 Platform for Reproducible Research. Procedia Computer Science 4(0), 618-626.
 # Rossini, Anthony and Leisch, Friedrich, "Literate Statistical Practice" (March 2003). UW Biostatistics Working Paper Series. Working Paper 194. http://biostats.bepress.com/uwbiostat/paper194
 # Hothorn T and Leisch F 2011. Case studies in reproducibility. Briefings in Bioinformatics 12(3), 288-300.
-
-
 # Gandrud C 2013 Reproducible Research with R and RStudio. CRC Press Florida.
 # Xie Y 2013 Dynamic Documents with R and knitr. CRC Press Florida
 
-# Claerbout's ranking (http://dx.doi.org/10.1109/5992.881708)
+## Blogs sourced for this presentation
 
-# web sites
+# http://blog.stodden.net/2013/04/19/what-the-reinhart-rogoff-debacle-really-shows-verifying-empirical-results-needs-to-be-routine/
+# http://kbroman.github.io/Tools4RR/
+# http://rpubs.com/bbolker/3153
+# http://sepwww.stanford.edu/data/media/public/sep//jon/repropreface.html
+# http://blog.revolutionanalytics.com/2010/10/a-workflow-for-r.html
+# http://www.stanford.edu/~vcs/AAAS2011/
 # http://wiki.stodden.net/Best_Practices_for_Researchers_Publishing_Computational_Results
 # http://www.reproducibleresearch.net/index.php/RR_links
-# http://www.stanford.edu/~vcs/AAAS2011/
 # http://www.nature.com/nature/focus/reproducibility/
+# Claerbout's ranking (http://dx.doi.org/10.1109/5992.881708)
 # http://fperez.org/py4science/git.html
 # http://ivory.idyll.org/blog/replication-i.html
 # http://www.mendeley.com/groups/1142301/reproducible-research/
+# http://biostat.mc.vanderbilt.edu/wiki/Main/StatReport
+# http://reproducibleresearch.net/index.php/How_to
+# http://www.executablepapers.com/index.html
+# http://tomwallis.info/category/reproducible-research/
+# http://simplystatistics.org/2013/08/21/treading-a-new-path-for-reproducible-research-part-1/
+# http://scienceinthesands.blogspot.co.uk/search/label/reproduciblie%20research
+# http://scienceinthesands.blogspot.co.uk/2012/08/7-habits-of-open-scientist-2.html
+# http://scitation.aip.org/content/aip/journal/cise/11/1/10.1109/MCSE.2009.19
+# http://www.reproducibility.org/RSF/book/rsf/scons/paper_html/node2.html
+# http://ajrichards.bitbucket.org/lpEdit/ReproducibleResearch.html
+# http://kieranhealy.org/blog/archives/2014/01/23/plain-text/
+# http://nicercode.github.io/git/
+# http://nicercode.github.io/blog/2013-04-05-projects/
+# http://ivory.idyll.org/blog/tag/reproducibility.html
+# http://yihui.name/en/tags/#Reproducible Research
+# http://www.rstudio.com/ide/download/preview
+# https://github.com/rstudio/rmarkdown
+
+# web applications, services & organisations 
+
+# http://recomputation.org/
 # http://sciencecodemanifesto.org/
 # http://researchcompendia.org/
-# http://biostat.mc.vanderbilt.edu/wiki/Main/StatReport
-# http://blog.revolutionanalytics.com/2010/10/a-workflow-for-r.html
+# https://collage.elsevier.com/
+# http://www.runmycode.org/home/?/CompanionSite/
+
+## Software cited in the presentation (in order of appearance)
+
+# http://www.r-project.org/
+# http://cran.r-project.org/web/packages/roxygen2/index.html
+#   http://www.rstudio.com/ide/docs/packages/documentation
+#   http://adv-r.had.co.nz/Documenting-functions.html
+# http://rcharts.io/
+#   http://ramnathv.github.io/rCharts/
+#   https://github.com/ramnathv/rCharts
+# http://ipython.org/
+# https://github.com/att/rcloud
+#   http://www.research.att.com/articles/featured_stories/2013_09/201309_SandR.html?fbid=RljYLCmQyyR
+# http://daringfireball.net/projects/markdown/
+# http://rmarkdown.rstudio.com/
+# http://yihui.name/knitr/
+#   http://cran.r-project.org/web/packages/knitr/index.html
+# http://johnmacfarlane.net/pandoc/
+# http://git-scm.com/
+#   https://github.com/
+#   https://bitbucket.org/
+# http://www.rstudio.com/ide/
+# http://figshare.com/
+# http://datadryad.org/
+
+#
+
 ```
 
