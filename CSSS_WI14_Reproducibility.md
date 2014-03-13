@@ -147,7 +147,7 @@ Scripted analyses are superior
 
 - Plain text files will be readable for a long time
 - Improved transparency, automation, maintanability, accessibility, standardisation, modularity, portability, efficiency, communicability of process (what more could we want?)
-- But there's a steep learning curve 
+- But there's a steep learning curve  
 
 A selection of my favourite tools for reproducible research (which also seem to be widely used by others in the social sciences)
 ========================================================
@@ -170,11 +170,7 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-<<<<<<< HEAD
-The time is Thu 13 Mar 12:04:17 PM 2014
-=======
-The time is Wed 12 Mar 1:16:35 PM 2014
->>>>>>> 15cd7a8c7aeec73ae40b357e6996740ae4970378
+The time is Thu 13 Mar 12:11:18 PM 2014
 
 
 Literate programming: for and against 
@@ -237,21 +233,21 @@ Interactive charts in the browser with the rCharts package
     
   &lt;/head&gt;
   &lt;body&gt;
-    &lt;div id=&#039;chart197068f29c9&#039; class=&#039;rChart nvd3&#039;&gt;&lt;/div&gt;  
+    &lt;div id=&#039;chart1b102dd01e15&#039; class=&#039;rChart nvd3&#039;&gt;&lt;/div&gt;  
     
     &lt;script type=&#039;text/javascript&#039;&gt;
  $(document).ready(function(){
-      drawchart197068f29c9()
+      drawchart1b102dd01e15()
     });
-    function drawchart197068f29c9(){  
+    function drawchart1b102dd01e15(){  
       var opts = {
- &quot;dom&quot;: &quot;chart197068f29c9&quot;,
+ &quot;dom&quot;: &quot;chart1b102dd01e15&quot;,
 &quot;width&quot;:    800,
 &quot;height&quot;:    400,
 &quot;x&quot;: &quot;wt&quot;,
 &quot;y&quot;: &quot;mpg&quot;,
 &quot;type&quot;: &quot;scatterChart&quot;,
-&quot;id&quot;: &quot;chart197068f29c9&quot; 
+&quot;id&quot;: &quot;chart1b102dd01e15&quot; 
 },
         data = [
  {
@@ -721,11 +717,7 @@ Interactive charts in the browser with the rCharts package
 nvd3
  '
 id=iframe-
-<<<<<<< HEAD
-chart197068f29c9
-=======
-chart9b449bec86
->>>>>>> 15cd7a8c7aeec73ae40b357e6996740ae4970378
+chart1b102dd01e15
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -757,22 +749,22 @@ Interactive charts in the browser with the rCharts package
     
   &lt;/head&gt;
   &lt;body&gt;
-    &lt;div id=&#039;chart19707ed94124&#039; class=&#039;rChart nvd3&#039;&gt;&lt;/div&gt;  
+    &lt;div id=&#039;chart1b107beba35&#039; class=&#039;rChart nvd3&#039;&gt;&lt;/div&gt;  
     
     &lt;script type=&#039;text/javascript&#039;&gt;
  $(document).ready(function(){
-      drawchart19707ed94124()
+      drawchart1b107beba35()
     });
-    function drawchart19707ed94124(){  
+    function drawchart1b107beba35(){  
       var opts = {
- &quot;dom&quot;: &quot;chart19707ed94124&quot;,
+ &quot;dom&quot;: &quot;chart1b107beba35&quot;,
 &quot;width&quot;:    800,
 &quot;height&quot;:    400,
 &quot;x&quot;: &quot;Hair&quot;,
 &quot;y&quot;: &quot;Freq&quot;,
 &quot;group&quot;: &quot;Eye&quot;,
 &quot;type&quot;: &quot;multiBarChart&quot;,
-&quot;id&quot;: &quot;chart19707ed94124&quot; 
+&quot;id&quot;: &quot;chart1b107beba35&quot; 
 },
         data = [
  {
@@ -922,11 +914,7 @@ Interactive charts in the browser with the rCharts package
 nvd3
  '
 id=iframe-
-<<<<<<< HEAD
-chart19707ed94124
-=======
-chart9b425e44b99
->>>>>>> 15cd7a8c7aeec73ae40b357e6996740ae4970378
+chart1b107beba35
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
