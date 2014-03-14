@@ -230,7 +230,7 @@ Interactive charts in the browser with the rCharts package
 
 ```{r nvd3plot2, results = 'asis', comment = NA, message = F, echo = F} 
 require(rCharts)
-# options(RCHART_WIDTH = 600, RCHART_HEIGHT = 400)
+options(RCHART_WIDTH = 600, RCHART_HEIGHT = 300)
 hair_eye_male <- subset(as.data.frame(HairEyeColor), Sex == "Male")
 n2 <- nPlot(Freq ~ Hair, group = "Eye", data = hair_eye_male, type = "multiBarChart")
 n2$show('iframesrc', cdn = TRUE)
@@ -350,6 +350,7 @@ Costs
 ***
 ![alt text](figures/figshare.png)
 ![alt text](figures/dryad.png)
+![alt text](figures/zenodo.png)
 
 
 A hierarchy of reproducibility 
@@ -394,14 +395,14 @@ Standards to normalise reproducible research
 Culture change is the biggest challenge
 ========================================================
 - Promote culture change through positive attribution 
-- Implement mechanisms to indicate & encourage **degrees of compliance** (ie. easily identifiable logo & clear definitions for different levels of reproducibility):
+- Implement mechanisms to indicate & encourage **degrees of compliance** (ie. clear definitions for different levels of reproducibility), cf. Stodden's:
  - **'Reproducible'**: compendium of text-code-data online
  - **'Reproduced'**: compendium available and independently reproduced 
  - **'Semi-Reproducible'**: when the full compendium is not released
  - **'Semi-Reproduced'**: independent reproduction with other data
  - **'Perpetually Reproducible'**: streaming data
  
-Our role in the future of reproducible research
+Our role in the future of reproducible research (Leveque et al 2012)
 ========================================================
 incremental: true
 - Train students by putting homework, assignments & dissertations on the reproducible research spectrum
@@ -438,7 +439,7 @@ Licensing:
 
 References
 ========================================================
-See Rpres file on [github](https://github.com/benmarwick/CSSS-Primer-Reproducible-Research) for full references and sources
+See [Rpres file on github](https://raw.github.com/benmarwick/CSSS-Primer-Reproducible-Research/master/CSSS_WI14_Reproducibility.Rpres) for full references and sources
 ```{r, echo=FALSE}
 ## Scholarly literature sources for this presentation
 
@@ -460,7 +461,7 @@ See Rpres file on [github](https://github.com/benmarwick/CSSS-Primer-Reproducibl
 # LeVeque, R.J. Python tools for reproducible research on hyperbolic problems. Computing in Science & Engineering. (2009),
 # 19-27. 
 # LeVeque, R.J. Wave propagation software, computational science, and reproducible research. Proceedings of the International Congress of Mathematicians (Madrid, Spain, 2006), 1-27.
-#  R.J. LeVeque, I.M. Mitchell, and V. Stodden, Reproducible research for scientific computing: Tools and strategies for changing the culture, Comput. Sci. Eng., 14 (2012), 13–17.
+# LeVeque, R, Stodden, V., & Mitchell, I. (2012). Reproducible Research for Scientific Computing: Tools and Strategies for Changing the Culture. Computing in Science and Engineering, 14(4), 13–17
 # Price, K. Anything You Can Do, I Can Do Better (No You Can't)... Computer Vision, Graphics, and Image Processing. (1986), 387-391.
 # Piwowar, H. a et al. Sharing detailed research data is associated with increased citation rate. PloS one. 2, (2007), 308.
 # Wilson, G. et al. Best Practices for Scientic Computing. 1-6.
@@ -549,7 +550,6 @@ See Rpres file on [github](https://github.com/benmarwick/CSSS-Primer-Reproducibl
 # http://www.rstudio.com/ide/
 # http://figshare.com/
 # http://datadryad.org/
-
 #
 
 ```

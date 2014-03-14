@@ -170,7 +170,7 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Thu 13 Mar 12:35:18 PM 2014
+The time is Thu 13 Mar 10:23:30 PM 2014
 
 
 Literate programming: for and against 
@@ -223,20 +223,20 @@ Interactive charts in the browser with the rCharts package
     height: 400px;
   }  
   </style>
-<div id = 'chart128c25502859' class = 'rChart nvd3'></div>
+<div id = 'chart149c1bce41bd' class = 'rChart nvd3'></div>
 <script type='text/javascript'>
  $(document).ready(function(){
-      drawchart128c25502859()
+      drawchart149c1bce41bd()
     });
-    function drawchart128c25502859(){  
+    function drawchart149c1bce41bd(){  
       var opts = {
- "dom": "chart128c25502859",
+ "dom": "chart149c1bce41bd",
 "width":    800,
 "height":    400,
 "x": "wt",
 "y": "mpg",
 "type": "scatterChart",
-"id": "chart128c25502859" 
+"id": "chart149c1bce41bd" 
 },
         data = [
  {
@@ -721,29 +721,29 @@ Interactive charts in the browser with the rCharts package
       display: block;
       margin-left: auto; 
       margin-right: auto;
-      width: 800px;
-      height: 400px;
+      width: 600px;
+      height: 300px;
     }  
     &lt;/style&gt;
     
   &lt;/head&gt;
   &lt;body&gt;
-    &lt;div id=&#039;chart128c83e2d80&#039; class=&#039;rChart nvd3&#039;&gt;&lt;/div&gt;  
+    &lt;div id=&#039;chart149c452a34b&#039; class=&#039;rChart nvd3&#039;&gt;&lt;/div&gt;  
     
     &lt;script type=&#039;text/javascript&#039;&gt;
  $(document).ready(function(){
-      drawchart128c83e2d80()
+      drawchart149c452a34b()
     });
-    function drawchart128c83e2d80(){  
+    function drawchart149c452a34b(){  
       var opts = {
- &quot;dom&quot;: &quot;chart128c83e2d80&quot;,
-&quot;width&quot;:    800,
-&quot;height&quot;:    400,
+ &quot;dom&quot;: &quot;chart149c452a34b&quot;,
+&quot;width&quot;:    600,
+&quot;height&quot;:    300,
 &quot;x&quot;: &quot;Hair&quot;,
 &quot;y&quot;: &quot;Freq&quot;,
 &quot;group&quot;: &quot;Eye&quot;,
 &quot;type&quot;: &quot;multiBarChart&quot;,
-&quot;id&quot;: &quot;chart128c83e2d80&quot; 
+&quot;id&quot;: &quot;chart149c452a34b&quot; 
 },
         data = [
  {
@@ -893,7 +893,7 @@ Interactive charts in the browser with the rCharts package
 nvd3
  '
 id=iframe-
-chart128c83e2d80
+chart149c452a34b
 ></iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
@@ -1010,6 +1010,7 @@ Costs
 ***
 ![alt text](figures/figshare.png)
 ![alt text](figures/dryad.png)
+![alt text](figures/zenodo.png)
 
 
 A hierarchy of reproducibility 
@@ -1054,14 +1055,14 @@ Standards to normalise reproducible research
 Culture change is the biggest challenge
 ========================================================
 - Promote culture change through positive attribution 
-- Implement mechanisms to indicate & encourage **degrees of compliance** (ie. easily identifiable logo & clear definitions for different levels of reproducibility):
+- Implement mechanisms to indicate & encourage **degrees of compliance** (ie. clear definitions for different levels of reproducibility), cf. Stodden's:
  - **'Reproducible'**: compendium of text-code-data online
  - **'Reproduced'**: compendium available and independently reproduced 
  - **'Semi-Reproducible'**: when the full compendium is not released
  - **'Semi-Reproduced'**: independent reproduction with other data
  - **'Perpetually Reproducible'**: streaming data
  
-Our role in the future of reproducible research
+Our role in the future of reproducible research (Leveque et al 2012)
 ========================================================
 incremental: true
 - Train students by putting homework, assignments & dissertations on the reproducible research spectrum
@@ -1098,7 +1099,7 @@ Licensing:
 
 References
 ========================================================
-See Rpres file on [github](https://github.com/benmarwick/CSSS-Primer-Reproducible-Research) for full references and sources
+See [Rpres file on github](https://raw.github.com/benmarwick/CSSS-Primer-Reproducible-Research/master/CSSS_WI14_Reproducibility.Rpres) for full references and sources
 
 
 
