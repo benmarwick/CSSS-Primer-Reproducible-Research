@@ -165,12 +165,11 @@ Let's calculate the current time in R.
 ```r
 time <- format(Sys.time(), "%a %d %b %X %Y")
 ```
-
 The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Thu 13 Mar 12:35:18 PM 2014
+The time is Mon 18 Apr 7:57:06 PM 2016
 
 
 Literate programming: for and against 
@@ -209,11 +208,11 @@ Very low barrier to documentation of code with roxygen2
 
 Interactive charts in the browser with the rCharts package
 ========================================================
-<link rel='stylesheet' href=http://nvd3.org/assets/css/nv.d3.css>
-<script type='text/javascript' src=http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js></script>
-<script type='text/javascript' src=http://d3js.org/d3.v3.min.js></script>
-<script type='text/javascript' src=http://timelyportfolio.github.io/rCharts_nvd3_tests/libraries/widgets/nvd3/js/nv.d3.min-new.js></script>
-<script type='text/javascript' src=http://nvd3.org/assets/lib/fisheye.js></script> 
+<link rel='stylesheet' href=//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.css>
+<script type='text/javascript' src=//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js></script>
+<script type='text/javascript' src=//d3js.org/d3.v3.min.js></script>
+<script type='text/javascript' src=//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.js></script>
+<script type='text/javascript' src=//nvd3.org/assets/lib/fisheye.js></script> 
  <style>
   .rChart {
     display: block;
@@ -223,20 +222,20 @@ Interactive charts in the browser with the rCharts package
     height: 400px;
   }  
   </style>
-<div id = 'chart128c25502859' class = 'rChart nvd3'></div>
+<div id = 'chart46015d0117b' class = 'rChart nvd3'></div>
 <script type='text/javascript'>
  $(document).ready(function(){
-      drawchart128c25502859()
+      drawchart46015d0117b()
     });
-    function drawchart128c25502859(){  
+    function drawchart46015d0117b(){  
       var opts = {
- "dom": "chart128c25502859",
+ "dom": "chart46015d0117b",
 "width":    800,
 "height":    400,
 "x": "wt",
 "y": "mpg",
 "type": "scatterChart",
-"id": "chart128c25502859" 
+"id": "chart46015d0117b" 
 },
         data = [
  {
@@ -657,7 +656,7 @@ Interactive charts in the browser with the rCharts package
 } 
 ]
   
-      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus")) {
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
         var data = d3.nest()
           .key(function(d){
             //return opts.group === undefined ? 'main' : d[opts.group]
@@ -675,10 +674,15 @@ Interactive charts in the browser with the rCharts package
       
       nv.addGraph(function() {
         var chart = nv.models[opts.type]()
-          .x(function(d) { return d[opts.x] })
-          .y(function(d) { return d[opts.y] })
           .width(opts.width)
           .height(opts.height)
+          
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+          
          
         
           
@@ -700,21 +704,19 @@ Interactive charts in the browser with the rCharts package
     };
 </script>
 
-
 Interactive charts in the browser with the rCharts package
 ========================================================
 
-<iframe srcdoc='
-&lt;!doctype HTML&gt;
+<iframe srcdoc=' &lt;!doctype HTML&gt;
 &lt;meta charset = &#039;utf-8&#039;&gt;
 &lt;html&gt;
   &lt;head&gt;
-    &lt;link rel=&#039;stylesheet&#039; href=&#039;http://nvd3.org/assets/css/nv.d3.css&#039;&gt;
+    &lt;link rel=&#039;stylesheet&#039; href=&#039;//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.css&#039;&gt;
     
-    &lt;script src=&#039;http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
-    &lt;script src=&#039;http://d3js.org/d3.v3.min.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
-    &lt;script src=&#039;http://timelyportfolio.github.io/rCharts_nvd3_tests/libraries/widgets/nvd3/js/nv.d3.min-new.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
-    &lt;script src=&#039;http://nvd3.org/assets/lib/fisheye.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//d3js.org/d3.v3.min.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//nvd3.org/assets/lib/fisheye.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
     
     &lt;style&gt;
     .rChart {
@@ -727,23 +729,23 @@ Interactive charts in the browser with the rCharts package
     &lt;/style&gt;
     
   &lt;/head&gt;
-  &lt;body&gt;
-    &lt;div id=&#039;chart128c83e2d80&#039; class=&#039;rChart nvd3&#039;&gt;&lt;/div&gt;  
+  &lt;body &gt;
     
+    &lt;div id = &#039;chart46073cc44e2&#039; class = &#039;rChart nvd3&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
  $(document).ready(function(){
-      drawchart128c83e2d80()
+      drawchart46073cc44e2()
     });
-    function drawchart128c83e2d80(){  
+    function drawchart46073cc44e2(){  
       var opts = {
- &quot;dom&quot;: &quot;chart128c83e2d80&quot;,
+ &quot;dom&quot;: &quot;chart46073cc44e2&quot;,
 &quot;width&quot;:    800,
 &quot;height&quot;:    400,
 &quot;x&quot;: &quot;Hair&quot;,
 &quot;y&quot;: &quot;Freq&quot;,
 &quot;group&quot;: &quot;Eye&quot;,
 &quot;type&quot;: &quot;multiBarChart&quot;,
-&quot;id&quot;: &quot;chart128c83e2d80&quot; 
+&quot;id&quot;: &quot;chart46073cc44e2&quot; 
 },
         data = [
  {
@@ -844,7 +846,7 @@ Interactive charts in the browser with the rCharts package
 } 
 ]
   
-      if(!(opts.type===&quot;pieChart&quot; || opts.type===&quot;sparklinePlus&quot;)) {
+      if(!(opts.type===&quot;pieChart&quot; || opts.type===&quot;sparklinePlus&quot; || opts.type===&quot;bulletChart&quot;)) {
         var data = d3.nest()
           .key(function(d){
             //return opts.group === undefined ? &#039;main&#039; : d[opts.group]
@@ -862,10 +864,15 @@ Interactive charts in the browser with the rCharts package
       
       nv.addGraph(function() {
         var chart = nv.models[opts.type]()
-          .x(function(d) { return d[opts.x] })
-          .y(function(d) { return d[opts.y] })
           .width(opts.width)
           .height(opts.height)
+          
+        if (opts.type != &quot;bulletChart&quot;){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+          
          
         
           
@@ -887,16 +894,10 @@ Interactive charts in the browser with the rCharts package
     };
 &lt;/script&gt;
     
+    &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt;
-' scrolling='no' seamless class='rChart 
-nvd3
- '
-id=iframe-
-chart128c83e2d80
-></iframe>
-<style>iframe.rChart{ width: 100%; height: 400px;}</style>
-
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  nvd3  ' id='iframe-chart46073cc44e2'> </iframe>
+ <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 
 Interactive notebook in the browser, IPython-style
@@ -1099,6 +1100,5 @@ Licensing:
 References
 ========================================================
 See Rpres file on [github](https://github.com/benmarwick/CSSS-Primer-Reproducible-Research) for full references and sources
-
 
 
