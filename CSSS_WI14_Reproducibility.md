@@ -169,8 +169,12 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
+<<<<<<< e50b1badf2937035960313a7a4a99d948fe89f97
 The time is Mon 18 Apr 7:57:06 PM 2016
 
+=======
+The time is Thu Feb 13 5:32:15 PM 2014
+>>>>>>> more slides
 
 Literate programming: for and against 
 ========================================================
@@ -199,6 +203,7 @@ R packages: an ideal 'Compendium'?
 
 >"both a container for the different elements that make up the document and its computations (i.e. text, code, data, etc.), and as a means for distributing, managing and updating the collection... allow us to move from an era of advertisement to one where our scholarship itself is published" <small><small>- Gentleman and Temple Lang 2004</small></small>
 
+<<<<<<< e50b1badf2937035960313a7a4a99d948fe89f97
 
 Very low barrier to documentation of code with roxygen2
 ========================================================
@@ -705,6 +710,8 @@ Interactive charts in the browser with the rCharts package
 </script>
 
 Interactive charts in the browser with the rCharts package
+=======
+>>>>>>> more slides
 ========================================================
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -933,12 +940,24 @@ rmarkdown:
 
 Dynamic documents in R
 ========================================================
+<<<<<<< e50b1badf2937035960313a7a4a99d948fe89f97
 knitr - descendant of Sweave  
+=======
+knitr - descendant of Sweave
+
+![alt text](figures/knitr.png)
+>>>>>>> more slides
 
 Engine for dynamic report generation in R
 
 <img src="figures/knitr.png" alt="alt text" width="400">
 
+<<<<<<< e50b1badf2937035960313a7a4a99d948fe89f97
+=======
+'dynamic documents' put narrative and code in the same location
+
+When data or narrative are updated, the document is automatically updated
+>>>>>>> more slides
 
 ***
 
@@ -1077,8 +1096,6 @@ Thanks!
 >"Abandoning the habit of secrecy in favor of process transparency and peer review was the crucial step by which alchemy became chemistry."
 ---
 <small><small>-Raymond, E. S., 2004, The art of UNIX programming: Addison-Wesley.</small></small>
-
-
 
 Colophon
 ========================================================

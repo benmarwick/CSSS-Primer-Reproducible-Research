@@ -199,6 +199,7 @@ R packages: an ideal 'Compendium'?
 >"both a container for the different elements that make up the document and its computations (i.e. text, code, data, etc.), and as a means for distributing, managing and updating the collection... allow us to move from an era of advertisement to one where our scholarship itself is published" <small><small>- Gentleman and Temple Lang 2004</small></small>
 
 
+<<<<<<< e50b1badf2937035960313a7a4a99d948fe89f97
 Very low barrier to documentation of code with roxygen2
 ========================================================
 
@@ -206,6 +207,8 @@ Very low barrier to documentation of code with roxygen2
 
 
 Interactive charts in the browser with the rCharts package
+=======
+>>>>>>> more slides
 ========================================================
 ```{r nvd3plot1, results = 'asis', comment = NA, message = F, echo = F} 
 # this only works when the presentation is saved as HTML
@@ -254,6 +257,7 @@ RCloud, another IPython-style R notebook
 
 Need a document formatting language
 ========================================================
+<<<<<<< e50b1badf2937035960313a7a4a99d948fe89f97
 `
  
 `
@@ -261,6 +265,11 @@ Need a document formatting language
 
 Markdown: lightweight document formatting syntax
 based on email text formatting. Easy to write, read and publish as-is.
+=======
+knitr - descendant of Sweave
+
+![alt text](figures/knitr.png)
+>>>>>>> more slides
 
 ***
 The human-readable part
@@ -276,7 +285,13 @@ knitr - descendant of Sweave
 
 Engine for dynamic report generation in R
 
+<<<<<<< e50b1badf2937035960313a7a4a99d948fe89f97
 <img src="figures/knitr.png" alt="alt text" width="400">
+=======
+'dynamic documents' put narrative and code in the same location
+
+When data or narrative are updated, the document is automatically updated
+>>>>>>> more slides
 
 
 ***
@@ -416,8 +431,6 @@ Thanks!
 >"Abandoning the habit of secrecy in favor of process transparency and peer review was the crucial step by which alchemy became chemistry."
 ---
 <small><small>-Raymond, E. S., 2004, The art of UNIX programming: Addison-Wesley.</small></small>
-
-
 
 Colophon
 ========================================================
