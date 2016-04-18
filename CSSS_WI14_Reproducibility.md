@@ -165,12 +165,11 @@ Let's calculate the current time in R.
 ```r
 time <- format(Sys.time(), "%a %d %b %X %Y")
 ```
-
 The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Thu 13 Mar 10:23:30 PM 2014
+The time is Mon 18 Apr 7:11:11 PM 2016
 
 
 Literate programming: for and against 
@@ -209,11 +208,11 @@ Very low barrier to documentation of code with roxygen2
 
 Interactive charts in the browser with the rCharts package
 ========================================================
-<link rel='stylesheet' href=http://nvd3.org/assets/css/nv.d3.css>
-<script type='text/javascript' src=http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js></script>
-<script type='text/javascript' src=http://d3js.org/d3.v3.min.js></script>
-<script type='text/javascript' src=http://timelyportfolio.github.io/rCharts_nvd3_tests/libraries/widgets/nvd3/js/nv.d3.min-new.js></script>
-<script type='text/javascript' src=http://nvd3.org/assets/lib/fisheye.js></script> 
+<link rel='stylesheet' href=//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.css>
+<script type='text/javascript' src=//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js></script>
+<script type='text/javascript' src=//d3js.org/d3.v3.min.js></script>
+<script type='text/javascript' src=//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.js></script>
+<script type='text/javascript' src=//nvd3.org/assets/lib/fisheye.js></script> 
  <style>
   .rChart {
     display: block;
@@ -223,20 +222,20 @@ Interactive charts in the browser with the rCharts package
     height: 400px;
   }  
   </style>
-<div id = 'chart149c1bce41bd' class = 'rChart nvd3'></div>
+<div id = 'chart12f0345a2b77' class = 'rChart nvd3'></div>
 <script type='text/javascript'>
  $(document).ready(function(){
-      drawchart149c1bce41bd()
+      drawchart12f0345a2b77()
     });
-    function drawchart149c1bce41bd(){  
+    function drawchart12f0345a2b77(){  
       var opts = {
- "dom": "chart149c1bce41bd",
+ "dom": "chart12f0345a2b77",
 "width":    800,
 "height":    400,
 "x": "wt",
 "y": "mpg",
 "type": "scatterChart",
-"id": "chart149c1bce41bd" 
+"id": "chart12f0345a2b77" 
 },
         data = [
  {
@@ -657,7 +656,7 @@ Interactive charts in the browser with the rCharts package
 } 
 ]
   
-      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus")) {
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
         var data = d3.nest()
           .key(function(d){
             //return opts.group === undefined ? 'main' : d[opts.group]
@@ -675,10 +674,15 @@ Interactive charts in the browser with the rCharts package
       
       nv.addGraph(function() {
         var chart = nv.models[opts.type]()
-          .x(function(d) { return d[opts.x] })
-          .y(function(d) { return d[opts.y] })
           .width(opts.width)
           .height(opts.height)
+          
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+          
          
         
           
@@ -700,154 +704,142 @@ Interactive charts in the browser with the rCharts package
     };
 </script>
 
-
 Interactive charts in the browser with the rCharts package
 ========================================================
 
-<iframe srcdoc='
-&lt;!doctype HTML&gt;
-&lt;meta charset = &#039;utf-8&#039;&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;link rel=&#039;stylesheet&#039; href=&#039;http://nvd3.org/assets/css/nv.d3.css&#039;&gt;
-    
-    &lt;script src=&#039;http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
-    &lt;script src=&#039;http://d3js.org/d3.v3.min.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
-    &lt;script src=&#039;http://timelyportfolio.github.io/rCharts_nvd3_tests/libraries/widgets/nvd3/js/nv.d3.min-new.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
-    &lt;script src=&#039;http://nvd3.org/assets/lib/fisheye.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
-    
-    &lt;style&gt;
-    .rChart {
-      display: block;
-      margin-left: auto; 
-      margin-right: auto;
-      width: 600px;
-      height: 300px;
-    }  
-    &lt;/style&gt;
-    
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;div id=&#039;chart149c452a34b&#039; class=&#039;rChart nvd3&#039;&gt;&lt;/div&gt;  
-    
-    &lt;script type=&#039;text/javascript&#039;&gt;
+<link rel='stylesheet' href=//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.css>
+<script type='text/javascript' src=//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js></script>
+<script type='text/javascript' src=//d3js.org/d3.v3.min.js></script>
+<script type='text/javascript' src=//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.js></script>
+<script type='text/javascript' src=//nvd3.org/assets/lib/fisheye.js></script> 
+ <style>
+  .rChart {
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 600px;
+    height: 300px;
+  }  
+  </style>
+<div id = 'iframesrc' class = 'rChart nvd3'></div>
+<script type='text/javascript'>
  $(document).ready(function(){
-      drawchart149c452a34b()
+      drawiframesrc()
     });
-    function drawchart149c452a34b(){  
+    function drawiframesrc(){  
       var opts = {
- &quot;dom&quot;: &quot;chart149c452a34b&quot;,
-&quot;width&quot;:    600,
-&quot;height&quot;:    300,
-&quot;x&quot;: &quot;Hair&quot;,
-&quot;y&quot;: &quot;Freq&quot;,
-&quot;group&quot;: &quot;Eye&quot;,
-&quot;type&quot;: &quot;multiBarChart&quot;,
-&quot;id&quot;: &quot;chart149c452a34b&quot; 
+ "dom": "iframesrc",
+"width":    600,
+"height":    300,
+"x": "Hair",
+"y": "Freq",
+"group": "Eye",
+"type": "multiBarChart",
+"id": "iframesrc" 
 },
         data = [
  {
- &quot;Hair&quot;: &quot;Black&quot;,
-&quot;Eye&quot;: &quot;Brown&quot;,
-&quot;Sex&quot;: &quot;Male&quot;,
-&quot;Freq&quot;:             32 
+ "Hair": "Black",
+"Eye": "Brown",
+"Sex": "Male",
+"Freq":             32 
 },
 {
- &quot;Hair&quot;: &quot;Brown&quot;,
-&quot;Eye&quot;: &quot;Brown&quot;,
-&quot;Sex&quot;: &quot;Male&quot;,
-&quot;Freq&quot;:             53 
+ "Hair": "Brown",
+"Eye": "Brown",
+"Sex": "Male",
+"Freq":             53 
 },
 {
- &quot;Hair&quot;: &quot;Red&quot;,
-&quot;Eye&quot;: &quot;Brown&quot;,
-&quot;Sex&quot;: &quot;Male&quot;,
-&quot;Freq&quot;:             10 
+ "Hair": "Red",
+"Eye": "Brown",
+"Sex": "Male",
+"Freq":             10 
 },
 {
- &quot;Hair&quot;: &quot;Blond&quot;,
-&quot;Eye&quot;: &quot;Brown&quot;,
-&quot;Sex&quot;: &quot;Male&quot;,
-&quot;Freq&quot;:              3 
+ "Hair": "Blond",
+"Eye": "Brown",
+"Sex": "Male",
+"Freq":              3 
 },
 {
- &quot;Hair&quot;: &quot;Black&quot;,
-&quot;Eye&quot;: &quot;Blue&quot;,
-&quot;Sex&quot;: &quot;Male&quot;,
-&quot;Freq&quot;:             11 
+ "Hair": "Black",
+"Eye": "Blue",
+"Sex": "Male",
+"Freq":             11 
 },
 {
- &quot;Hair&quot;: &quot;Brown&quot;,
-&quot;Eye&quot;: &quot;Blue&quot;,
-&quot;Sex&quot;: &quot;Male&quot;,
-&quot;Freq&quot;:             50 
+ "Hair": "Brown",
+"Eye": "Blue",
+"Sex": "Male",
+"Freq":             50 
 },
 {
- &quot;Hair&quot;: &quot;Red&quot;,
-&quot;Eye&quot;: &quot;Blue&quot;,
-&quot;Sex&quot;: &quot;Male&quot;,
-&quot;Freq&quot;:             10 
+ "Hair": "Red",
+"Eye": "Blue",
+"Sex": "Male",
+"Freq":             10 
 },
 {
- &quot;Hair&quot;: &quot;Blond&quot;,
-&quot;Eye&quot;: &quot;Blue&quot;,
-&quot;Sex&quot;: &quot;Male&quot;,
-&quot;Freq&quot;:             30 
+ "Hair": "Blond",
+"Eye": "Blue",
+"Sex": "Male",
+"Freq":             30 
 },
 {
- &quot;Hair&quot;: &quot;Black&quot;,
-&quot;Eye&quot;: &quot;Hazel&quot;,
-&quot;Sex&quot;: &quot;Male&quot;,
-&quot;Freq&quot;:             10 
+ "Hair": "Black",
+"Eye": "Hazel",
+"Sex": "Male",
+"Freq":             10 
 },
 {
- &quot;Hair&quot;: &quot;Brown&quot;,
-&quot;Eye&quot;: &quot;Hazel&quot;,
-&quot;Sex&quot;: &quot;Male&quot;,
-&quot;Freq&quot;:             25 
+ "Hair": "Brown",
+"Eye": "Hazel",
+"Sex": "Male",
+"Freq":             25 
 },
 {
- &quot;Hair&quot;: &quot;Red&quot;,
-&quot;Eye&quot;: &quot;Hazel&quot;,
-&quot;Sex&quot;: &quot;Male&quot;,
-&quot;Freq&quot;:              7 
+ "Hair": "Red",
+"Eye": "Hazel",
+"Sex": "Male",
+"Freq":              7 
 },
 {
- &quot;Hair&quot;: &quot;Blond&quot;,
-&quot;Eye&quot;: &quot;Hazel&quot;,
-&quot;Sex&quot;: &quot;Male&quot;,
-&quot;Freq&quot;:              5 
+ "Hair": "Blond",
+"Eye": "Hazel",
+"Sex": "Male",
+"Freq":              5 
 },
 {
- &quot;Hair&quot;: &quot;Black&quot;,
-&quot;Eye&quot;: &quot;Green&quot;,
-&quot;Sex&quot;: &quot;Male&quot;,
-&quot;Freq&quot;:              3 
+ "Hair": "Black",
+"Eye": "Green",
+"Sex": "Male",
+"Freq":              3 
 },
 {
- &quot;Hair&quot;: &quot;Brown&quot;,
-&quot;Eye&quot;: &quot;Green&quot;,
-&quot;Sex&quot;: &quot;Male&quot;,
-&quot;Freq&quot;:             15 
+ "Hair": "Brown",
+"Eye": "Green",
+"Sex": "Male",
+"Freq":             15 
 },
 {
- &quot;Hair&quot;: &quot;Red&quot;,
-&quot;Eye&quot;: &quot;Green&quot;,
-&quot;Sex&quot;: &quot;Male&quot;,
-&quot;Freq&quot;:              7 
+ "Hair": "Red",
+"Eye": "Green",
+"Sex": "Male",
+"Freq":              7 
 },
 {
- &quot;Hair&quot;: &quot;Blond&quot;,
-&quot;Eye&quot;: &quot;Green&quot;,
-&quot;Sex&quot;: &quot;Male&quot;,
-&quot;Freq&quot;:              8 
+ "Hair": "Blond",
+"Eye": "Green",
+"Sex": "Male",
+"Freq":              8 
 } 
 ]
   
-      if(!(opts.type===&quot;pieChart&quot; || opts.type===&quot;sparklinePlus&quot;)) {
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
         var data = d3.nest()
           .key(function(d){
-            //return opts.group === undefined ? &#039;main&#039; : d[opts.group]
+            //return opts.group === undefined ? 'main' : d[opts.group]
             //instead of main would think a better default is opts.x
             return opts.group === undefined ? opts.y : d[opts.group];
           })
@@ -862,10 +854,15 @@ Interactive charts in the browser with the rCharts package
       
       nv.addGraph(function() {
         var chart = nv.models[opts.type]()
-          .x(function(d) { return d[opts.x] })
-          .y(function(d) { return d[opts.y] })
           .width(opts.width)
           .height(opts.height)
+          
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+          
          
         
           
@@ -875,8 +872,8 @@ Interactive charts in the browser with the rCharts package
         
         
       
-       d3.select(&quot;#&quot; + opts.id)
-        .append(&#039;svg&#039;)
+       d3.select("#" + opts.id)
+        .append('svg')
         .datum(data)
         .transition().duration(500)
         .call(chart);
@@ -885,18 +882,7 @@ Interactive charts in the browser with the rCharts package
        return chart;
       });
     };
-&lt;/script&gt;
-    
-  &lt;/body&gt;
-&lt;/html&gt;
-' scrolling='no' seamless class='rChart 
-nvd3
- '
-id=iframe-
-chart149c452a34b
-></iframe>
-<style>iframe.rChart{ width: 100%; height: 400px;}</style>
-
+</script>
 
 
 Interactive notebook in the browser, IPython-style
@@ -1100,6 +1086,5 @@ Licensing:
 References
 ========================================================
 See [Rpres file on github](https://raw.github.com/benmarwick/CSSS-Primer-Reproducible-Research/master/CSSS_WI14_Reproducibility.Rpres) for full references and sources
-
 
 
