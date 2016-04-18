@@ -1,0 +1,10 @@
+base
+bitops
+datasets
+graphics
+grDevices
+methods
+rCharts
+RCurl
+stats
+utils
