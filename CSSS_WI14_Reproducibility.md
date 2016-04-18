@@ -169,7 +169,7 @@ The text and R code are interwoven in the output:
 
 The time is `` `r time` ``
 
-The time is Mon 18 Apr 7:11:11 PM 2016
+The time is Mon 18 Apr 7:36:52 PM 2016
 
 
 Literate programming: for and against 
@@ -206,13 +206,14 @@ Very low barrier to documentation of code with roxygen2
 <img src="figures/roxygen2.jpg" alt="alt text" width="800">
 
 
-Interactive charts in the browser with the rCharts package
+Interactive charts in the browser with the rCharts package (1)
 ========================================================
-<link rel='stylesheet' href=//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.css>
-<script type='text/javascript' src=//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js></script>
-<script type='text/javascript' src=//d3js.org/d3.v3.min.js></script>
-<script type='text/javascript' src=//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.js></script>
-<script type='text/javascript' src=//nvd3.org/assets/lib/fisheye.js></script> 
+<link rel='stylesheet' href=C:/emacs/R/win-library/3.2/rCharts/libraries/nvd3/css/nv.d3.css>
+<link rel='stylesheet' href=C:/emacs/R/win-library/3.2/rCharts/libraries/nvd3/css/rNVD3.css>
+<script type='text/javascript' src=C:/emacs/R/win-library/3.2/rCharts/libraries/nvd3/js/jquery-1.8.2.min.js></script>
+<script type='text/javascript' src=C:/emacs/R/win-library/3.2/rCharts/libraries/nvd3/js/d3.v3.min.js></script>
+<script type='text/javascript' src=C:/emacs/R/win-library/3.2/rCharts/libraries/nvd3/js/nv.d3.min-new.js></script>
+<script type='text/javascript' src=C:/emacs/R/win-library/3.2/rCharts/libraries/nvd3/js/fisheye.js></script> 
  <style>
   .rChart {
     display: block;
@@ -222,20 +223,20 @@ Interactive charts in the browser with the rCharts package
     height: 400px;
   }  
   </style>
-<div id = 'chart12f0345a2b77' class = 'rChart nvd3'></div>
+<div id = 'inline' class = 'rChart nvd3'></div>
 <script type='text/javascript'>
  $(document).ready(function(){
-      drawchart12f0345a2b77()
+      drawinline()
     });
-    function drawchart12f0345a2b77(){  
+    function drawinline(){  
       var opts = {
- "dom": "chart12f0345a2b77",
+ "dom": "inline",
 "width":    800,
 "height":    400,
 "x": "wt",
 "y": "mpg",
 "type": "scatterChart",
-"id": "chart12f0345a2b77" 
+"id": "inline" 
 },
         data = [
  {
@@ -704,14 +705,15 @@ Interactive charts in the browser with the rCharts package
     };
 </script>
 
-Interactive charts in the browser with the rCharts package
+Interactive charts in the browser with the rCharts package (2)
 ========================================================
 
-<link rel='stylesheet' href=//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.css>
-<script type='text/javascript' src=//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js></script>
-<script type='text/javascript' src=//d3js.org/d3.v3.min.js></script>
-<script type='text/javascript' src=//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.js></script>
-<script type='text/javascript' src=//nvd3.org/assets/lib/fisheye.js></script> 
+<link rel='stylesheet' href=C:/emacs/R/win-library/3.2/rCharts/libraries/nvd3/css/nv.d3.css>
+<link rel='stylesheet' href=C:/emacs/R/win-library/3.2/rCharts/libraries/nvd3/css/rNVD3.css>
+<script type='text/javascript' src=C:/emacs/R/win-library/3.2/rCharts/libraries/nvd3/js/jquery-1.8.2.min.js></script>
+<script type='text/javascript' src=C:/emacs/R/win-library/3.2/rCharts/libraries/nvd3/js/d3.v3.min.js></script>
+<script type='text/javascript' src=C:/emacs/R/win-library/3.2/rCharts/libraries/nvd3/js/nv.d3.min-new.js></script>
+<script type='text/javascript' src=C:/emacs/R/win-library/3.2/rCharts/libraries/nvd3/js/fisheye.js></script> 
  <style>
   .rChart {
     display: block;

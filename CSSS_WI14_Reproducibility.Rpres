@@ -205,7 +205,7 @@ Very low barrier to documentation of code with roxygen2
 <img src="figures/roxygen2.jpg" alt="alt text" width="800">
 
 
-Interactive charts in the browser with the rCharts package
+Interactive charts in the browser with the rCharts package (1)
 ========================================================
 ```{r nvd3plot1, results = 'asis', comment = NA, message = F, echo = F} 
 # this only works when the presentation is saved as HTML
@@ -214,7 +214,9 @@ require(rCharts)
 n1 <- nPlot(mpg ~ wt, data = mtcars, type = 'scatterChart')
 n1$addParams(width = 800, height = 400)
 # n1$show('iframesrc', cdn = TRUE)
-n1$show('inline', include_assets = TRUE, cdn = TRUE)
+# n1$show('inline', include_assets = TRUE, cdn = TRUE)
+# n1$print('iframesrc', include_assets=TRUE)
+n1$print('inline', include_assets=TRUE)
 
 # another one
 # options(RCHART_WIDTH = 600, RCHART_HEIGHT = 400)
@@ -225,7 +227,7 @@ n1$show('inline', include_assets = TRUE, cdn = TRUE)
 # h1$show('inline', include_assets = TRUE, cdn = TRUE)
 ```
 
-Interactive charts in the browser with the rCharts package
+Interactive charts in the browser with the rCharts package (2)
 ========================================================
 
 ```{r nvd3plot2, results = 'asis', comment = NA, message = F, echo = F} 
@@ -235,7 +237,7 @@ hair_eye_male <- subset(as.data.frame(HairEyeColor), Sex == "Male")
 n2 <- nPlot(Freq ~ Hair, group = "Eye", data = hair_eye_male, type = "multiBarChart")
 #n2$show('iframesrc', cdn = TRUE)
 # from http://stackoverflow.com/a/28121787/1036500
-n2$print('iframesrc', cdn =TRUE, include_assets=TRUE)
+n2$print('iframesrc', include_assets=TRUE)
 # n2$show('inline', include_assets = TRUE, cdn = TRUE)
 
 ```
